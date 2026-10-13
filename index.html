@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网安竞赛信息库</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>网安专业竞赛信息库</h1>
+    <p>报名时间 · 难度 · 赛制 · 加分参考</p>
+  </header>
+
+  <div class="controls">
+  <input id="search" type="text" placeholder="搜索竞赛名称、技能、主办方...">
+  
+  <div class="filter-row">
+    <span class="filter-label">难度：</span>
+    <button class="filter-btn" data-type="difficulty" data-val="全部">全部</button>
+    <button class="filter-btn" data-type="difficulty" data-val="入门">入门</button>
+    <button class="filter-btn" data-type="difficulty" data-val="进阶">进阶</button>
+    <button class="filter-btn" data-type="difficulty" data-val="精英">精英</button>
+  </div>
+  
+  <div class="filter-row">
+    <span class="filter-label">重要程度：</span>
+    <button class="filter-btn" data-type="importance" data-val="全部">全部</button>
+    <button class="filter-btn" data-type="importance" data-val="入门">入门</button>
+    <button class="filter-btn" data-type="importance" data-val="进阶">进阶</button>
+    <button class="filter-btn" data-type="importance" data-val="精英">精英</button>
+  </div>
+</div>
+
+  <main id="list" class="list"></main>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
