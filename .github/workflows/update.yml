@@ -2,8 +2,8 @@ name: Auto Update Competition Data
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # 每周一跑一次
-  workflow_dispatch: # 允许手动触发
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,12 +26,14 @@ jobs:
           pip install requests beautifulsoup4 lxml
 
       - name: Run update script
-        run: python scripts/update_all.py
+        # 注意：这里指向了多出来的那层子文件夹
+        run: python sec-competitions/scripts/update_all.py
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json
+          # 注意：这里也指向了子文件夹里的 data.json
+          git add sec-competitions/data.json
           git commit -m "Auto update" || exit 0
           git push
