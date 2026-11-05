@@ -625,7 +625,7 @@ def main():
         else: flag = "FAIL "
         return cid, name, res, flag
 
-    print(f"🚀 开始并发抓取 (共 {MAX_WORKERS} 线程)...", flush=True)
+    print(f"开始并发抓取 (共 {MAX_WORKERS} 线程)...", flush=True)
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {executor.submit(process_comp, comp): comp for comp in data}
         for future in as_completed(futures):
@@ -638,7 +638,7 @@ def main():
                     stats[res["status"]] = stats.get(res["status"], 0) + 1
                     print(f"[{flag}] id={cid:<3} {name[:28]:<28} {res['detail']}", flush=True)
             except Exception as e:
-                print(f"⚠️ 收集出错: {e}", flush=True)
+                print(f" 收集出错: {e}", flush=True)
 
     stats["skipped"] = stats.pop("skip", 0)
     
@@ -653,7 +653,7 @@ def main():
     with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     os.replace(tmp_path, out_path)
-    print(f"🎉 已写入 {out_path}（更新 {stats['updated']}，保留 {stats['low_conf']}，跳过 {stats['skipped']}，失败 {stats['failed']}）", flush=True)
+    print(f" 已写入 {out_path}（更新 {stats['updated']}，保留 {stats['low_conf']}，跳过 {stats['skipped']}，失败 {stats['failed']}）", flush=True)
 
 if __name__ == "__main__":
     main()
