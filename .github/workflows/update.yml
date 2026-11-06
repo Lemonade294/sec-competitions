@@ -27,7 +27,7 @@ jobs:
 
       - name: Run update script
         # 注意：这里指向了多出来的那层子文件夹
-        run: python sec-competitions/scripts/update_all.py
+        run: python sec-competitions/scripts/update.py
 
       - name: Commit and push changes
         run: |
