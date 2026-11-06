@@ -26,14 +26,14 @@ jobs:
           pip install requests beautifulsoup4 lxml
 
       - name: Run update script
-        # 注意：这里指向了多出来的那层子文件夹
-        run: python sec-competitions/scripts/update.py
+        # 直接在根目录的 scripts 文件夹下找 update.py
+        run: python scripts/update.py
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # 注意：这里也指向了子文件夹里的 data.json
-          git add sec-competitions/data.json
+          # 直接在根目录提交 data.json
+          git add data.json
           git commit -m "Auto update" || exit 0
           git push
