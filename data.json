@@ -1,612 +1,2375 @@
 [
   {
-    "id": 1, "name": "中国国际大学生创新大赛（原互联网+）", "short": "互联网+", "level": "A", "organizer": "教育部",
-    "signUp": "校级选拔约3-6月", "time": "校赛3-6月 → 省赛7-9月 → 国赛10-11月", "format": "高教主赛道、红旅赛道等",
-    "difficulty": "精英", "importance": "精英", "skills": ["创新创业", "商业计划书", "路演"], "team": "3-15人", "bonus": "8分（全国1等奖/金奖排名前4名）", "prep": "国金获奖率极低，双创类天花板", "link": "https://cy.ncss.cn"
-  },
-  {
-    "id": 2, "name": "“挑战杯”全国大学生课外学术科技作品竞赛", "short": "大挑", "level": "A", "organizer": "共青团中央",
-    "signUp": "约4-6月", "time": "校赛4-6月 → 省赛7-8月 → 国赛10-11月", "format": "学术论文、调查报告、科技发明",
-    "difficulty": "精英", "importance": "精英", "skills": ["学术论文", "科技发明"], "team": "不超过8人", "bonus": "8分（全国1等奖/金奖排名前4名）", "prep": "奇数年，保研履历硬通货", "link": "http://www.tiaozhanbei.net"
-  },
-  {
-    "id": 3, "name": "“挑战杯”中国大学生创业计划大赛", "short": "小挑", "level": "A", "organizer": "共青团中央",
-    "signUp": "约5-9月", "time": "校赛5月底前 → 省赛6-9月 → 国赛11月前", "format": "创业计划竞赛",
-    "difficulty": "精英", "importance": "精英", "skills": ["商业计划书", "路演"], "team": "团队", "bonus": "8分（全国1等奖/金奖排名前4名）", "prep": "偶数年，偏商业计划与路演", "link": "http://www.tiaozhanbei.net"
-  },
-  {
-    "id": 4, "name": "ACM-ICPC国际大学生程序设计竞赛（亚洲区及以上）", "short": "ICPC", "level": "B", "organizer": "ICPC基金会",
-    "signUp": "赛前1-2个月", "time": "区域赛9-12月 → 世界总决赛次年", "format": "ACM赛制算法编程",
-    "difficulty": "精英", "importance": "精英", "skills": ["算法", "图论", "动态规划"], "team": "3人", "bonus": "世界总决赛金/银/铜8/7/6分；区域赛金/银/铜4/2/1分", "prep": "算法竞赛天花板", "link": "https://icpc.global"
-  },
-  {
-    "id": 5, "name": "全国大学生信息安全竞赛（创新实践能力赛）暨“长城杯”半决赛", "short": "CISCN半决赛", "level": "B", "organizer": "教育部教指委",
-    "signUp": "约3-5月", "time": "7-8月", "format": "CTF解题 + AWD",
-    "difficulty": "进阶", "importance": "精英", "skills": ["Web", "Pwn", "逆向", "密码学"], "team": "≤4人", "bonus": "1/2/3等加3/2/1分", "prep": "网安国赛，含金量极高", "link": "http://www.ciscn.cn"
-  },
-  {
-    "id": 6, "name": "全国大学生信息安全竞赛（创新实践能力赛）决赛", "short": "CISCN决赛", "level": "B", "organizer": "教育部教指委",
-    "signUp": "约3-5月", "time": "8-9月", "format": "CTF解题 + AWD",
-    "difficulty": "精英", "importance": "精英", "skills": ["Web", "Pwn", "逆向", "密码学"], "team": "≤4人", "bonus": "1/2/3等加8/7/6分（不与半决赛累加）", "prep": "网安最高级别国赛", "link": "http://www.ciscn.cn"
-  },
-  {
-    "id": 7, "name": "“长城杯”网数智安全大赛（防护赛）决赛", "short": "长城杯决赛", "level": "B", "organizer": "中国信息安全测评中心",
-    "signUp": "年底至次年初", "time": "次年7月", "format": "网数智安全攻防",
-    "difficulty": "精英", "importance": "精英", "skills": ["AWD", "渗透", "应急"], "team": "团队", "bonus": "1/2/3等加6/5/4分（不与半决赛累加）", "prep": "与CISCN联合举办", "link": "https://ccb.itsec.gov.cn"
-  },
-  {
-    "id": 8, "name": "全国大学生信息安全竞赛（作品赛）暨长城杯作品赛", "short": "CISCN作品赛", "level": "B", "organizer": "教育部教指委",
-    "signUp": "约3-5月", "time": "8月", "format": "信息安全作品",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["安全开发", "创新"], "team": "≤4人", "bonus": "4分", "prep": "偏作品展示与答辩", "link": "http://www.ciscn.cn"
-  },
-  {
-    "id": 9, "name": "全国大学生信息安全与对抗技术竞赛", "short": "ISCC", "level": "B", "organizer": "中国兵工学会",
-    "signUp": "约4-5月", "time": "线上4-7月 → 决赛11月", "format": "CTF/擂台/数据安全",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["CTF", "Web", "Misc"], "team": "团队", "bonus": "4分", "prep": "适合CTF入门到进阶", "link": "https://www.isclab.org.cn"
-  },
-  {
-    "id": 10, "name": "全国大学生物联网设计竞赛", "short": "物联网设计", "level": "B", "organizer": "计算机类教指委",
-    "signUp": "约3-5月", "time": "8月", "format": "物联网系统设计",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["物联网", "嵌入式"], "team": "3-5人", "bonus": "4分", "prep": "偏工程作品与演示", "link": "http://iot.sjtu.edu.cn"
-  },
-  {
-    "id": 11, "name": "全球校园人工智能算法精英大赛", "short": "AI算法", "level": "B", "organizer": "江苏省人工智能学会",
-    "signUp": "约4月", "time": "11月", "format": "算法赛题",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["AI", "算法"], "team": "团队", "bonus": "4分", "prep": "榜单赛事", "link": "https://www.aicomp.cn"
-  },
-  {
-    "id": 12, "name": "“中国软件杯”大学生软件设计大赛", "short": "软件杯", "level": "B", "organizer": "工信部",
-    "signUp": "约3-7月", "time": "8-9月", "format": "企业命题软件开发",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["软件开发", "AI"], "team": "3-5人", "bonus": "4分", "prep": "大模型/信创方向", "link": "http://www.cnsoftbei.com"
-  },
-  {
-    "id": 13, "name": "全国大学生计算机系统能力大赛", "short": "系统能力", "level": "B", "organizer": "计算机教育研究会",
-    "signUp": "约3-5月", "time": "8月", "format": "CPU/OS/编译/数据库",
-    "difficulty": "精英", "importance": "进阶", "skills": ["操作系统", "底层"], "team": "团队", "bonus": "4分", "prep": "极硬核", "link": "https://cscc.educg.net"
-  },
-  {
-    "id": 14, "name": "中国大学生计算机设计大赛", "short": "4C", "level": "B", "organizer": "大赛组委会",
-    "signUp": "约3-4月", "time": "7-8月", "format": "软件开发/设计",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["软件开发"], "team": "团队", "bonus": "专业相关最高4分，非专业1分", "prep": "门槛较友好", "link": "http://jsjds.blcu.edu.cn"
-  },
-  {
-    "id": 15, "name": "中国高校计算机大赛（C4）", "short": "C4", "level": "B", "organizer": "计算机类教指委",
-    "signUp": "贯穿3-11月", "time": "贯穿3-11月", "format": "大数据/天梯赛/网络等",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["大数据", "算法"], "team": "团队", "bonus": "4分（移动应用启明赛道最高2分）", "prep": "网络赛道与网安相关", "link": "http://www.c4best.cn"
-  },
-  {
-    "id": 16, "name": "华为ICT大赛", "short": "华为ICT", "level": "B", "organizer": "华为",
-    "signUp": "约11月", "time": "次年6月", "format": "网络/云/AI",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["网络", "云计算"], "team": "团队", "bonus": "4分", "prep": "可对应HCIP认证", "link": "https://e.huawei.com/cn/talent/ict-academy"
-  },
-  {
-    "id": 17, "name": "百度之星·程序设计大赛", "short": "百度之星", "level": "B", "organizer": "百度",
-    "signUp": "约4-7月", "time": "8-12月", "format": "算法编程",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["算法"], "team": "个人", "bonus": "4分", "prep": "初赛省赛，决赛国赛", "link": "https://astar.baidu.com"
-  },
-  {
-    "id": 18, "name": "微软“创新杯”全球学生大赛（国际级）", "short": "创新杯国际", "level": "B", "organizer": "微软",
-    "signUp": "约1-3月", "time": "4月", "format": "科技创业",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["AI", "双创"], "team": "团队", "bonus": "4分", "prep": "国际赛事", "link": "https://imaginecup.microsoft.com"
-  },
-  {
-    "id": 19, "name": "微软“创新杯”全球学生大赛（中国区）", "short": "创新杯中国区", "level": "B", "organizer": "微软",
-    "signUp": "约1-3月", "time": "4月", "format": "科技创业",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["AI", "双创"], "team": "团队", "bonus": "4分", "prep": "国内选拔", "link": "https://imaginecup.microsoft.com"
-  },
-  {
-    "id": 20, "name": "全国大学生数学建模竞赛", "short": "国赛数模", "level": "B", "organizer": "工业与应用数学学会",
-    "signUp": "约8-9月", "time": "9月中旬", "format": "数学建模论文",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["数学建模", "编程"], "team": "3人", "bonus": "4分", "prep": "国一很难", "link": "https://www.mcm.edu.cn"
-  },
-  {
-    "id": 21, "name": "蓝桥杯全国软件和信息技术专业人才大赛", "short": "蓝桥杯", "level": "B", "organizer": "工信部",
-    "signUp": "约10-12月", "time": "次年4-6月", "format": "编程算法",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["C/C++", "Java", "Python"], "team": "个人", "bonus": "4分", "prep": "省赛简单，国赛有含金量", "link": "https://dasai.lanqiao.cn"
-  },
-  {
-    "id": 22, "name": "全国大学生电子设计竞赛", "short": "电赛", "level": "B", "organizer": "教育部",
-    "signUp": "约1-4月", "time": "奇数年8月", "format": "电子系统设计",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["嵌入式", "硬件"], "team": "3人", "bonus": "4分", "prep": "硬件类硬通货", "link": "http://nuedc.xjtu.edu.cn"
-  },
-  {
-    "id": 23, "name": "全国大学生数学竞赛", "short": "CMC", "level": "B", "organizer": "中国数学会",
-    "signUp": "约9-10月", "time": "11月", "format": "数学笔试",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["高数", "代数"], "team": "个人", "bonus": "4分", "prep": "非数学类稍易", "link": "https://www.cmathc.org.cn"
-  },
-  {
-    "id": 24, "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛", "short": "RoboCup", "level": "B", "organizer": "自动化学会",
-    "signUp": "约3-4月", "time": "8-10月", "format": "机器人竞技",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["机器人", "自动化"], "team": "团队", "bonus": "4分", "prep": "偏硬件", "link": "https://rcccaa.drct-caa.org.cn"
-  },
-  {
-    "id": 25, "name": "全国大学生创新创业训练计划年会展示", "short": "国创年会", "level": "B", "organizer": "教育部",
-    "signUp": "约9-10月", "time": "11-12月", "format": "国创项目展示",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["双创"], "team": "国创团队", "bonus": "4分", "prep": "需有大创项目", "link": "http://gjcxcy.bjtu.edu.cn"
-  },
-  {
-    "id": 26, "name": "全国大学生智能汽车竞赛", "short": "智能车", "level": "B", "organizer": "自动化学会",
-    "signUp": "约10月", "time": "8月", "format": "智能车竞速",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["嵌入式", "控制"], "team": "3人", "bonus": "4分", "prep": "自动化认可度高", "link": "http://www.smartcarrace.com"
-  },
-  {
-    "id": 27, "name": "全国大学生嵌入式芯片与系统设计竞赛", "short": "嵌入式芯片", "level": "B", "organizer": "电子教育学会",
-    "signUp": "约4月", "time": "8月", "format": "芯片/FPGA",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["硬件", "嵌入式"], "team": "1-3人", "bonus": "4分", "prep": "偏硬件", "link": "http://www.socchina.net"
-  },
-  {
-    "id": 28, "name": "“大唐杯”全国大学生新一代信息通信技术大赛", "short": "大唐杯", "level": "B", "organizer": "通信企业协会",
-    "signUp": "约12-3月", "time": "7月", "format": "通信技术",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["通信", "5G"], "team": "个人/团队", "bonus": "4分", "prep": "偏通信", "link": "https://dtcup.dtxiaotangren.com"
-  },
-  {
-    "id": 29, "name": "全国大学生机器人大赛-RoboMaster", "short": "RoboMaster", "level": "B", "organizer": "大疆",
-    "signUp": "约10-11月", "time": "7-8月", "format": "机甲对抗",
-    "difficulty": "精英", "importance": "进阶", "skills": ["机器人", "视觉"], "team": "团队", "bonus": "3分", "prep": "硬件门槛极高", "link": "https://www.robomaster.com"
-  },
-  {
-    "id": 30, "name": "全国大学生机器人大赛-RoboCon", "short": "RoboCon", "level": "B", "organizer": "组委会",
-    "signUp": "约12月", "time": "下半年", "format": "机器人任务赛",
-    "difficulty": "精英", "importance": "进阶", "skills": ["机器人"], "team": "团队", "bonus": "3分", "prep": "技术难度极大", "link": "https://robocon.org.cn"
-  },
-  {
-    "id": 31, "name": "睿抗机器人开发者大赛（RAICOM)", "short": "睿抗", "level": "B", "organizer": "工信部",
-    "signUp": "约4-7月", "time": "7-10月", "format": "机器人开发",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["机器人", "AI"], "team": "团队", "bonus": "3分", "prep": "赛项杂", "link": "https://www.raicom.com.cn"
-  },
-  {
-    "id": 32, "name": "中国机器人及人工智能大赛", "short": "机器人及AI", "level": "B", "organizer": "机电一体化协会",
-    "signUp": "约1-4月", "time": "7-8月", "format": "机器人/AI",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["机器人", "AI"], "team": "1-3人", "bonus": "3分", "prep": "偏应用", "link": "https://www.caairobot.com"
-  },
-  {
-    "id": 33, "name": "中国高校智能机器人创意大赛", "short": "机器人创意", "level": "B", "organizer": "高等教育学会",
-    "signUp": "约3-5月", "time": "7月", "format": "机器人创意",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["机器人"], "team": "团队", "bonus": "3分", "prep": "偏创意", "link": "http://www.robotcontest.cn"
-  },
-  {
-    "id": 34, "name": "中国大学生工程实践与创新能力大赛", "short": "工创赛", "level": "B", "organizer": "教育部",
-    "signUp": "约7-9月", "time": "下半年", "format": "工程实践",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["工程实践"], "team": "≤4人", "bonus": "2分", "prep": "机械/电子类", "link": "http://www.gcxl.edu.cn"
-  },
-  {
-    "id": 35, "name": "中美青年创客大赛", "short": "中美创客", "level": "B", "organizer": "教育部",
-    "signUp": "约4-6月", "time": "8月", "format": "创客作品",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["硬件", "双创"], "team": "团队", "bonus": "2分", "prep": "创客方向", "link": "https://www.chinausyoungmaker.com"
-  },
-  {
-    "id": 36, "name": "全国大学生光电设计竞赛", "short": "光电设计", "level": "B", "organizer": "光学学会",
-    "signUp": "约4月", "time": "6月", "format": "光电系统",
-    "difficulty": "进阶", "importance": "入门", "skills": ["光电"], "team": "团队", "bonus": "2分", "prep": "光电类", "link": "https://gd.moocollege.com"
-  },
-  {
-    "id": 37, "name": "全国大学生数字媒体科技作品及创意竞赛", "short": "数媒竞赛", "level": "B", "organizer": "组委会",
-    "signUp": "约9月", "time": "年底", "format": "数媒作品",
-    "difficulty": "进阶", "importance": "入门", "skills": ["数字媒体"], "team": "≤5人", "bonus": "2分", "prep": "与网安无关", "link": "http://www.cmit.cn"
-  },
-  {
-    "id": 38, "name": "全国三维数字化创新设计大赛", "short": "3D大赛", "level": "B", "organizer": "组委会",
-    "signUp": "约3月", "time": "下半年", "format": "3D建模",
-    "difficulty": "进阶", "importance": "入门", "skills": ["三维建模"], "team": "团队", "bonus": "2分", "prep": "机械/设计类", "link": "https://3dds.3ddl.net"
-  },
-  {
-    "id": 39, "name": "“西门子杯”中国智能制造挑战赛", "short": "西门子杯", "level": "B", "organizer": "自动化教指委",
-    "signUp": "约3-5月", "time": "8月", "format": "智能制造",
-    "difficulty": "进阶", "importance": "入门", "skills": ["智能制造"], "team": "团队", "bonus": "2分", "prep": "自动化类", "link": "http://www.siemenscup-cimc.org.cn"
-  },
-  {
-    "id": 40, "name": "中国大学生机械工程创新创意大赛", "short": "机械创新", "level": "B", "organizer": "机械工程学会",
-    "signUp": "不定", "time": "不定", "format": "机械设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["机械"], "team": "团队", "bonus": "2分", "prep": "机械类", "link": "https://www.cmes.org.cn"
-  },
-  {
-    "id": 41, "name": "iCAN大学生创新创业大赛", "short": "iCAN", "level": "B", "organizer": "组委会",
-    "signUp": "约4-8月", "time": "11月", "format": "创新赛道",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["双创"], "team": "团队", "bonus": "2分", "prep": "创业类", "link": "https://www.g-ican.com"
-  },
-  {
-    "id": 42, "name": "全国周培源大学生力学竞赛", "short": "力学竞赛", "level": "B", "organizer": "力学学会",
-    "signUp": "两年一届", "time": "两年一届", "format": "力学笔试",
-    "difficulty": "进阶", "importance": "入门", "skills": ["力学"], "team": "个人/团队", "bonus": "2分", "prep": "工科基础", "link": "http://zpy.cstam.org.cn"
-  },
-  {
-    "id": 43, "name": "外研社全国大学生英语系列赛", "short": "外研社杯", "level": "B", "organizer": "外研社",
-    "signUp": "约6-9月", "time": "10-12月", "format": "英语演讲/写作/阅读",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["英语"], "team": "个人", "bonus": "2分", "prep": "英语类顶级", "link": "https://ucc.fltrp.com"
-  },
-  {
-    "id": 44, "name": "全国大学生统计建模大赛", "short": "统计建模", "level": "B", "organizer": "统计教育学会",
-    "signUp": "约3月", "time": "10月", "format": "统计模型分析",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["数据分析"], "team": "3人", "bonus": "2分", "prep": "偏统计", "link": "http://tjjmds.ai-learning.net"
-  },
-  {
-    "id": 45, "name": "“外教社杯”全国高校学生跨文化能力大赛", "short": "跨文化能力", "level": "B", "organizer": "上外",
-    "signUp": "约3-10月", "time": "年底", "format": "英语跨文化交际",
-    "difficulty": "进阶", "importance": "入门", "skills": ["英语"], "team": "团队", "bonus": "2分", "prep": "外语类", "link": "https://ict.sflep.com"
-  },
-  {
-    "id": 46, "name": "中华经典诵写讲大赛", "short": "中华经典", "level": "B", "organizer": "教育部",
-    "signUp": "约5-8月", "time": "9-10月", "format": "诵读/书法",
-    "difficulty": "入门", "importance": "入门", "skills": ["人文"], "team": "个人", "bonus": "2分", "prep": "通识类", "link": "https://jdsxj.eduyun.cn"
-  },
-  {
-    "id": 47, "name": "“21世纪杯”全国英语演讲比赛", "short": "21世纪杯", "level": "B", "organizer": "中国日报社",
-    "signUp": "约3-4月", "time": "7月", "format": "英语演讲",
-    "difficulty": "进阶", "importance": "入门", "skills": ["英语"], "team": "个人", "bonus": "2分", "prep": "英语演讲", "link": "https://contest.i21st.cn"
-  },
-  {
-    "id": 48, "name": "全国大学生物理实验竞赛", "short": "物理实验", "level": "B", "organizer": "实验教学联席会",
-    "signUp": "约5月", "time": "下半年", "format": "物理实验",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["物理"], "team": "团队", "bonus": "2分", "prep": "实验类", "link": "http://wlsycx.moocollege.com"
-  },
-  {
-    "id": 49, "name": "未来设计师·全国高校数字艺术设计大赛", "short": "未来设计师", "level": "B", "organizer": "工信部",
-    "signUp": "约3-6月", "time": "下半年", "format": "数字艺术设计",
-    "difficulty": "入门", "importance": "入门", "skills": ["设计"], "team": "个人/团队", "bonus": "1分", "prep": "设计类", "link": "https://www.ncda.org.cn"
-  },
-  {
-    "id": 50, "name": "全国大学生地质技能竞赛", "short": "地质技能", "level": "B", "organizer": "地质学会",
-    "signUp": "两年一届", "time": "8月", "format": "地质技能",
-    "difficulty": "进阶", "importance": "入门", "skills": ["地质"], "team": "3人", "bonus": "1分", "prep": "地质类", "link": "https://www.geosociety.org.cn"
-  },
-  {
-    "id": 51, "name": "米兰设计周——中国高校设计学科师生优秀作品展", "short": "米兰设计周", "level": "B", "organizer": "教育国际交流协会",
-    "signUp": "约1-4月", "time": "7月", "format": "设计作品",
-    "difficulty": "入门", "importance": "入门", "skills": ["设计"], "team": "个人/团队", "bonus": "1分", "prep": "设计类", "link": "https://www.milan-aap.org.cn"
-  },
-  {
-    "id": 52, "name": "全国大学生集成电路创新创业大赛", "short": "集成电路", "level": "B", "organizer": "工信部",
-    "signUp": "约5-7月", "time": "下半年", "format": "集成电路设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["芯片", "硬件"], "team": "团队", "bonus": "1分", "prep": "芯片类", "link": "http://univ.ciciec.com"
-  },
-  {
-    "id": 53, "name": "全国高校商业精英挑战赛", "short": "商业精英", "level": "B", "organizer": "贸促会",
-    "signUp": "各赛项不同", "time": "各赛项不同", "format": "商业策划",
-    "difficulty": "入门", "importance": "入门", "skills": ["商业"], "team": "团队", "bonus": "1分", "prep": "商科类", "link": "https://www.cubec.org.cn"
-  },
-  {
-    "id": 54, "name": "中国好创意暨全国数字艺术设计大赛", "short": "中国好创意", "level": "B", "organizer": "电子视像协会",
-    "signUp": "约3-7月", "time": "下半年", "format": "数字艺术",
-    "difficulty": "入门", "importance": "入门", "skills": ["设计"], "team": "个人/团队", "bonus": "1分", "prep": "设计类", "link": "https://www.cdec.org.cn"
-  },
-  {
-    "id": 55, "name": "“学创杯”全国大学生创业综合模拟大赛", "short": "学创杯", "level": "B", "organizer": "实验教学联席会",
-    "signUp": "约3-4月", "time": "10-11月", "format": "创业模拟",
-    "difficulty": "入门", "importance": "入门", "skills": ["沙盘"], "team": "团队", "bonus": "1分", "prep": "商科类", "link": "http://www.xcbds.com"
-  },
-  {
-    "id": 56, "name": "全国高校BIM毕业设计创新大赛", "short": "BIM", "level": "B", "organizer": "土木学会",
-    "signUp": "约9月-次年1月", "time": "次年4-5月", "format": "BIM设计",
-    "difficulty": "入门", "importance": "入门", "skills": ["BIM"], "team": "团队", "bonus": "1分", "prep": "土木类", "link": "https://gxbsxs.glodonedu.com"
-  },
-  {
-    "id": 57, "name": "全国大学生化学实验邀请赛", "short": "化学邀请赛", "level": "B", "organizer": "化学教育研究中心",
-    "signUp": "不定", "time": "8月", "format": "化学实验",
-    "difficulty": "进阶", "importance": "入门", "skills": ["化学"], "team": "个人", "bonus": "1分", "prep": "化学类", "link": "#"
-  },
-  {
-    "id": 58, "name": "全国大学生生命科学竞赛（CULSU）", "short": "生命科学", "level": "B", "organizer": "生命科学竞赛委员会",
-    "signUp": "约8月-次年1月", "time": "次年", "format": "生命科学探究",
-    "difficulty": "进阶", "importance": "入门", "skills": ["生物"], "team": "团队", "bonus": "1分", "prep": "生物类", "link": "http://www.culsc.cn"
-  },
-  {
-    "id": 59, "name": "全国大学生市场调查与分析大赛", "short": "市场调查", "level": "B", "organizer": "商业统计学会",
-    "signUp": "约10月", "time": "次年5月", "format": "市场调查分析",
-    "difficulty": "入门", "importance": "入门", "skills": ["统计"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "http://www.china-cssc.org"
-  },
-  {
-    "id": 60, "name": "两岸新锐设计竞赛·华灿奖", "short": "华灿奖", "level": "B", "organizer": "高等教育学会",
-    "signUp": "约10-11月", "time": "次年", "format": "设计",
-    "difficulty": "入门", "importance": "入门", "skills": ["设计"], "team": "个人/团队", "bonus": "1分", "prep": "设计类", "link": "http://www.huacanjiang.com"
-  },
-  {
-    "id": 61, "name": "中国大学生服务外包创新创业大赛", "short": "服务外包", "level": "B", "organizer": "教育部",
-    "signUp": "约2-3月", "time": "年中", "format": "软件/AI开发",
-    "difficulty": "进阶", "importance": "入门", "skills": ["软件开发"], "team": "团队", "bonus": "1分", "prep": "计算机相关", "link": "http://www.fwwb.org.cn"
-  },
-  {
-    "id": 62, "name": "全国大学生工业设计大赛", "short": "工业设计", "level": "B", "organizer": "工业设计平台",
-    "signUp": "约5-7月", "time": "下半年", "format": "工业设计",
-    "difficulty": "入门", "importance": "入门", "skills": ["设计"], "team": "个人/团队", "bonus": "1分", "prep": "设计类", "link": "https://www.cuidc.net"
-  },
-  {
-    "id": 63, "name": "全国大学生广告艺术大赛", "short": "大广赛", "level": "B", "organizer": "大赛组委会",
-    "signUp": "约3-6月", "time": "9月", "format": "广告创意",
-    "difficulty": "入门", "importance": "入门", "skills": ["广告设计"], "team": "团队", "bonus": "1分", "prep": "艺术类", "link": "https://www.sun-ada.net"
-  },
-  {
-    "id": 64, "name": "中国大学生医学技术技能大赛", "short": "医学技能", "level": "B", "organizer": "教育部",
-    "signUp": "两年一届", "time": "不定", "format": "医学技能",
-    "difficulty": "精英", "importance": "入门", "skills": ["医学"], "team": "团队", "bonus": "1分", "prep": "医学类", "link": "#"
-  },
-  {
-    "id": 65, "name": "全国企业竞争模拟大赛", "short": "企模", "level": "B", "organizer": "管理现代化研究会",
-    "signUp": "约2-3月", "time": "4月", "format": "企业沙盘",
-    "difficulty": "入门", "importance": "入门", "skills": ["沙盘"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "https://ibizsim.moocollege.com"
-  },
-  {
-    "id": 66, "name": "全国数字建筑创新应用大赛", "short": "数字建筑", "level": "B", "organizer": "建设教育协会",
-    "signUp": "约4-7月", "time": "8-9月", "format": "BIM数字建筑",
-    "difficulty": "入门", "importance": "入门", "skills": ["BIM"], "team": "团队", "bonus": "1分", "prep": "土木类", "link": "http://bisai.ccen.com.cn"
-  },
-  {
-    "id": 67, "name": "全国高等院校数智化企业经营沙盘大赛", "short": "数智化沙盘", "level": "B", "organizer": "商业联合会",
-    "signUp": "约4-5月", "time": "9月", "format": "沙盘模拟",
-    "difficulty": "入门", "importance": "入门", "skills": ["沙盘"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "https://www.seentao.com/competition"
-  },
-  {
-    "id": 68, "name": "全国大学生电子商务“创新、创意及创业”挑战赛", "short": "三创赛", "level": "B", "organizer": "电商教指委",
-    "signUp": "约10月-次年1月", "time": "次年7-8月", "format": "电商项目",
-    "difficulty": "入门", "importance": "入门", "skills": ["商业"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "http://www.3chuang.net"
-  },
-  {
-    "id": 69, "name": "全国大学生财会职业能力大赛", "short": "财会", "level": "B", "organizer": "商业会计学会",
-    "signUp": "约7-9月", "time": "11-12月", "format": "财会技能",
-    "difficulty": "入门", "importance": "入门", "skills": ["财会"], "team": "团队", "bonus": "1分", "prep": "财会类", "link": "http://match.xmkeyun.com.cn"
-  },
-  {
-    "id": 70, "name": "国际大学生智能农业装备创新大赛", "short": "智能农业", "level": "B", "organizer": "农业工程学会",
-    "signUp": "约9月", "time": "次年3-5月", "format": "农业装备",
-    "difficulty": "入门", "importance": "入门", "skills": ["机械"], "team": "团队", "bonus": "1分", "prep": "农业类", "link": "http://uiaec.ujs.edu.cn"
-  },
-  {
-    "id": 71, "name": "全国企业模拟竞赛大赛", "short": "企模竞赛", "level": "B", "organizer": "管理现代化研究会",
-    "signUp": "约3月", "time": "5月", "format": "企业模拟",
-    "difficulty": "入门", "importance": "入门", "skills": ["沙盘"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "https://ibizsim.moocollege.com"
-  },
-  {
-    "id": 72, "name": "全国本科院校税收风险管控案例大赛", "short": "税收风险", "level": "B", "organizer": "大赛组委会",
-    "signUp": "约6-9月", "time": "年底", "format": "税务案例",
-    "difficulty": "入门", "importance": "入门", "skills": ["财税"], "team": "团队", "bonus": "1分", "prep": "财税类", "link": "http://ssfkds.moocollege.com"
-  },
-  {
-    "id": 73, "name": "全国大学生基础医学创新研究暨实验设计论坛", "short": "基础医学", "level": "B", "organizer": "医学竞赛委员会",
-    "signUp": "约12月-次年2月", "time": "暑期", "format": "医学实验设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["医学"], "team": "团队", "bonus": "1分", "prep": "医学类", "link": "http://www.jcyxds.com"
-  },
-  {
-    "id": 74, "name": "全国大学生能源经济学术创意大赛", "short": "能源经济", "level": "B", "organizer": "双法研究会",
-    "signUp": "约10-11月", "time": "次年4-5月", "format": "能源经济论文",
-    "difficulty": "入门", "importance": "入门", "skills": ["经济"], "team": "团队", "bonus": "1分", "prep": "经管类", "link": "#"
-  },
-  {
-    "id": 75, "name": "全国大学生测绘学科创新创业智能大赛", "short": "测绘", "level": "B", "organizer": "测绘学会",
-    "signUp": "约5月", "time": "7-8月", "format": "测绘技能",
-    "difficulty": "进阶", "importance": "入门", "skills": ["测绘"], "team": "团队", "bonus": "1分", "prep": "测绘类", "link": "http://smt.whu.edu.cn"
-  },
-  {
-    "id": 76, "name": "全国大学生花园设计建造竞赛", "short": "花园设计", "level": "B", "organizer": "北京林业大学",
-    "signUp": "约6-10月", "time": "次年春", "format": "花园建造",
-    "difficulty": "入门", "importance": "入门", "skills": ["园林"], "team": "团队", "bonus": "1分", "prep": "园林类", "link": "#"
-  },
-  {
-    "id": 77, "name": "全国大学生化学实验创新设计大赛", "short": "化学创新", "level": "B", "organizer": "化学教育研究中心",
-    "signUp": "约1-3月", "time": "次年7-8月", "format": "化学实验创新",
-    "difficulty": "进阶", "importance": "入门", "skills": ["化学"], "team": "团队", "bonus": "1分", "prep": "化学类", "link": "https://cid.nju.edu.cn"
-  },
-  {
-    "id": 78, "name": "全国大学生化工实验大赛", "short": "化工实验", "level": "B", "organizer": "化工教育协会",
-    "signUp": "约4-5月", "time": "暑期", "format": "化工实验",
-    "difficulty": "进阶", "importance": "入门", "skills": ["化工"], "team": "团队", "bonus": "1分", "prep": "化工类", "link": "http://edu.cteic.com/match"
-  },
-  {
-    "id": 79, "name": "“工行杯”全国大学生金融科技创新大赛", "short": "工行杯", "level": "B", "organizer": "工商银行",
-    "signUp": "约5-9月", "time": "11月", "format": "金融科技",
-    "difficulty": "进阶", "importance": "入门", "skills": ["金融", "科技"], "team": "个人/团队", "bonus": "1分", "prep": "金融类", "link": "https://www.gonghangbei.com"
-  },
-  {
-    "id": 80, "name": "全国大学生机械创新设计大赛", "short": "机械创新", "level": "B", "organizer": "机械创新组委会",
-    "signUp": "两年一届", "time": "两年一届", "format": "机械设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["机械"], "team": "团队", "bonus": "1分", "prep": "机械类", "link": "https://umic.moocollege.com"
-  },
-  {
-    "id": 81, "name": "全国大学生结构设计竞赛", "short": "结构设计", "level": "B", "organizer": "土木教指委",
-    "signUp": "约1-3月", "time": "10月", "format": "结构设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["土木"], "team": "3人", "bonus": "1分", "prep": "土木类", "link": "http://www.structurecontest.com"
-  },
-  {
-    "id": 82, "name": "全国大学生先进成图技术与产品信息建模创新大赛", "short": "成图大赛", "level": "B", "organizer": "图学学会",
-    "signUp": "约4月", "time": "7月", "format": "制图/建模",
-    "difficulty": "入门", "importance": "入门", "skills": ["CAD"], "team": "个人/团队", "bonus": "1分", "prep": "机械类", "link": "http://www.chengtudasai.com"
-  },
-  {
-    "id": 83, "name": "全国大学生化工设计竞赛", "short": "化工设计", "level": "B", "organizer": "化工学会",
-    "signUp": "约3-4月", "time": "8月", "format": "化工设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["化工"], "team": "5人", "bonus": "1分", "prep": "化工类", "link": "http://iche.zju.edu.cn"
-  },
-  {
-    "id": 84, "name": "全国大学生交通运输科技大赛", "short": "交通运输", "level": "B", "organizer": "交通运输协会",
-    "signUp": "约1-3月", "time": "5月", "format": "交通科技",
-    "difficulty": "入门", "importance": "入门", "skills": ["交通"], "team": "团队", "bonus": "1分", "prep": "交通类", "link": "http://www.nactrans.net"
-  },
-  {
-    "id": 85, "name": "全国大学生水利创新设计大赛", "short": "水利创新", "level": "B", "organizer": "水利教育协会",
-    "signUp": "两年一届", "time": "7月", "format": "水利设计",
-    "difficulty": "进阶", "importance": "入门", "skills": ["水利"], "team": "团队", "bonus": "1分", "prep": "水利类", "link": "http://sljzw.hhu.edu.cn"
-  },
-  {
-    "id": 86, "name": "全国大学生节能减排社会实践与科技竞赛", "short": "节能减排", "level": "B", "organizer": "能动教指委",
-    "signUp": "约3月", "time": "8月", "format": "节能减排",
-    "difficulty": "进阶", "importance": "入门", "skills": ["能源"], "team": "团队", "bonus": "1分", "prep": "能源类", "link": "https://www.jienengjianpai.cn"
-  },
-  {
-    "id": 87, "name": "全国大学生物流设计大赛", "short": "物流设计", "level": "B", "organizer": "物流采购联合会",
-    "signUp": "约4月", "time": "7月", "format": "物流案例",
-    "difficulty": "进阶", "importance": "入门", "skills": ["物流"], "team": "团队", "bonus": "1分", "prep": "物流类", "link": "http://dspt.clppx.org.cn"
-  },
-  {
-    "id": 88, "name": "全国大学生金相技能大赛", "short": "金相技能", "level": "B", "organizer": "材料教指委",
-    "signUp": "约3月", "time": "7月", "format": "金相制样",
-    "difficulty": "进阶", "importance": "入门", "skills": ["材料"], "team": "个人", "bonus": "1分", "prep": "材料类", "link": "https://www.jxds.tech"
-  },
-  {
-    "id": 89, "name": "在一流国际会议/期刊上发表论文或出版书籍", "short": "B类论文", "level": "B", "organizer": "学院认定",
-    "signUp": "全年", "time": "全年", "format": "学术论文",
-    "difficulty": "精英", "importance": "精英", "skills": ["科研"], "team": "第一人", "bonus": "10分(网安顶会)/3分(通信顶刊等)", "prep": "极高难度", "link": "#"
-  },
-  {
-    "id": 90, "name": "参军入伍期间荣立三等功及以上或被评为优秀士兵", "short": "参军立功", "level": "B", "organizer": "部队",
-    "signUp": "全年", "time": "全年", "format": "立功",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["军事"], "team": "个人", "bonus": "4分", "prep": "不重复享受C类15", "link": "#"
-  },
-  {
-    "id": 91, "name": "国际或国家级重要体育赛事", "short": "国家级体育", "level": "B", "organizer": "体育总局",
-    "signUp": "全年", "time": "全年", "format": "体育",
-    "difficulty": "精英", "importance": "进阶", "skills": ["体育"], "team": "个人/团队", "bonus": "3分（限奖牌获得者）", "prep": "需事先审核备案", "link": "#"
-  },
-  {
-    "id": 92, "name": "曾赴学校官方认可的国际组织实习", "short": "国际实习", "level": "B", "organizer": "国际组织",
-    "signUp": "全年", "time": "全年", "format": "实习",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["外语", "国际视野"], "team": "个人", "bonus": "3分", "prep": "需学院认证", "link": "#"
-  },
-  {
-    "id": 93, "name": "世界大学生超级计算机竞赛(ASC/SC/ISC)", "short": "超算竞赛", "level": "C", "organizer": "ASC组委会",
-    "signUp": "约11月", "time": "次年5月", "format": "HPC优化",
-    "difficulty": "精英", "importance": "进阶", "skills": ["超算", "Linux", "CUDA"], "team": "4-6人", "bonus": "1/2/3等加4/2/1分", "prep": "HPC门槛高", "link": "#"
-  },
-  {
-    "id": 94, "name": "全国大学生软件创新大赛", "short": "软件创新", "level": "C", "organizer": "软件学院联盟",
-    "signUp": "约12月", "time": "次年5月", "format": "软件开发",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["软件开发"], "team": "团队", "bonus": "1/2/3等加2/1.5/1分", "prep": "软件类", "link": "https://www.swcontest.com.cn"
-  },
-  {
-    "id": 95, "name": "美国大学生数学建模竞赛", "short": "美赛", "level": "C", "organizer": "COMAP",
-    "signUp": "约1月", "time": "2月", "format": "英文数模",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["建模", "英文论文"], "team": "3人", "bonus": "O/F/M/H加4/3/2/1分", "prep": "O奖极难", "link": "https://www.contest.comap.com"
-  },
-  {
-    "id": 96, "name": "全国密码技术竞赛", "short": "密码技术", "level": "C", "organizer": "密码学会",
-    "signUp": "约6月", "time": "11月", "format": "密码算法/系统",
-    "difficulty": "进阶", "importance": "精英", "skills": ["密码学", "国密"], "team": "3人", "bonus": "1/2/3等加2/1.5/1分", "prep": "网安核心", "link": "https://www.chinacodes.com.cn"
-  },
-  {
-    "id": 97, "name": "全国高校密码数学挑战赛", "short": "密码数学", "level": "C", "organizer": "密码学会",
-    "signUp": "约3-6月", "time": "8月", "format": "密码数学研究",
-    "difficulty": "精英", "importance": "精英", "skills": ["密码学", "数学"], "team": "3人", "bonus": "1/2/3等加2/1.5/1分", "prep": "难度极大", "link": "https://www.cmathc.org.cn"
-  },
-  {
-    "id": 98, "name": "红点（Reddot）设计大赛（国际级）", "short": "红点奖", "level": "C", "organizer": "德国设计协会",
-    "signUp": "约12月-次年1月", "time": "10-11月", "format": "工业/概念设计",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["设计", "UI/UX"], "team": "个人/团队", "bonus": "1/2/3等加1/0.8/0.5分", "prep": "设计类", "link": "https://www.red-dot.org"
-  },
-  {
-    "id": 99, "name": "全国大学生英语竞赛", "short": "NECCS", "level": "C", "organizer": "外语教师协会",
-    "signUp": "约12-3月", "time": "4-5月", "format": "英语综合",
-    "difficulty": "入门", "importance": "入门", "skills": ["英语"], "team": "个人", "bonus": "1/2/3等加1/0.8/0.5分", "prep": "容易拿奖", "link": "http://www.chinanccs.cn"
-  },
-  {
-    "id": 100, "name": "全国大学英语四六级考试口语考试", "short": "四六级口语", "level": "C", "organizer": "教育部",
-    "signUp": "随四六级", "time": "随四六级", "format": "口语",
-    "difficulty": "入门", "importance": "入门", "skills": ["英语"], "team": "个人", "bonus": "六级A+ 0.5分，四级A+ 0.3分", "prep": "口语极佳者拿", "link": "#"
-  },
-  {
-    "id": 101, "name": "湖北省大学生信创大赛", "short": "湖北信创", "level": "C", "organizer": "湖北省高教学会",
-    "signUp": "约10-12月", "time": "次年", "format": "信创技术",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["信创", "数据库"], "team": "3人", "bonus": "前4加2/1.5/1分，5~8名1.5/1/0.5分", "prep": "省内信创赛", "link": "#"
-  },
-  {
-    "id": 102, "name": "计算机技术与软件专业技术资格（水平）考试", "short": "软考", "level": "C", "organizer": "工信部",
-    "signUp": "上半年/下半年", "time": "5月/11月", "format": "计算机技术考试",
-    "difficulty": "进阶", "importance": "入门", "skills": ["计算机基础"], "team": "个人", "bonus": "高级2分，其他不加分", "prep": "考高级", "link": "#"
-  },
-  {
-    "id": 103, "name": "国家级大学生创新创业训练计划项目", "short": "国创项目", "level": "C", "organizer": "教育部",
-    "signUp": "按学校通知", "time": "按学校通知", "format": "项目研究",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["科研", "双创"], "team": "团队前四", "bonus": "负责人1分，成员0.5/0.25分", "prep": "需结题", "link": "#"
-  },
-  {
-    "id": 104, "name": "在核心刊物或会议上发表论文", "short": "C类论文", "level": "C", "organizer": "学院认定",
-    "signUp": "全年", "time": "全年", "format": "学术论文",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["科研"], "team": "第一人", "bonus": "最高2分(CCF-B/中科院二三区)", "prep": "最多认定一篇", "link": "#"
-  },
-  {
-    "id": 105, "name": "获专利", "short": "专利", "level": "C", "organizer": "国家知识产权局",
-    "signUp": "全年", "time": "全年", "format": "发明专利",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["创新"], "team": "第一发明人", "bonus": "最高1分", "prep": "华科为第一单位，专业相关", "link": "#"
-  },
-  {
-    "id": 106, "name": "参军入伍", "short": "参军入伍", "level": "C", "organizer": "部队",
-    "signUp": "全年", "time": "全年", "format": "服役",
-    "difficulty": "进阶", "importance": "入门", "skills": ["军事"], "team": "个人", "bonus": "1分", "prep": "已按B类加分的不重复", "link": "#"
-  },
-  {
-    "id": 107, "name": "湖北省大学生运动会、省级体育竞赛", "short": "省大运会", "level": "C", "organizer": "湖北省政府",
-    "signUp": "看通知", "time": "5-10月", "format": "体育",
-    "difficulty": "进阶", "importance": "入门", "skills": ["体育"], "team": "校队", "bonus": "1/2/3等加0.8/0.5/0.3分", "prep": "需校队", "link": "#"
-  },
-  {
-    "id": 108, "name": "省级文艺活动比赛", "short": "省级文艺", "level": "C", "organizer": "湖北省教育厅",
-    "signUp": "约5-7月", "time": "下半年", "format": "文艺",
-    "difficulty": "入门", "importance": "入门", "skills": ["文艺"], "team": "个人/团队", "bonus": "1/2/3等加0.8/0.5/0.3分", "prep": "美育类", "link": "#"
-  },
-  {
-    "id": 109, "name": "全国优秀学生干部、全国优秀共青团员、中国大学生年度人物等", "short": "思政类(国家级)", "level": "C", "organizer": "各级组织",
-    "signUp": "全年", "time": "全年", "format": "荣誉评定",
-    "difficulty": "精英", "importance": "进阶", "skills": ["综合素质"], "team": "个人", "bonus": "2分", "prep": "同一类别只加1次", "link": "#"
-  },
-  {
-    "id": 110, "name": "湖北省优秀学生干部、湖北省三好学生等", "short": "思政类(省级)", "level": "C", "organizer": "各级组织",
-    "signUp": "全年", "time": "全年", "format": "荣誉评定",
-    "difficulty": "进阶", "importance": "入门", "skills": ["综合素质"], "team": "个人", "bonus": "1分", "prep": "分类别计分", "link": "#"
-  },
-  {
-    "id": 111, "name": "校优秀党支部书记、校三好学生等", "short": "思政类(校级)", "level": "C", "organizer": "各级组织",
-    "signUp": "全年", "time": "全年", "format": "荣誉评定",
-    "difficulty": "入门", "importance": "入门", "skills": ["综合素质"], "team": "个人", "bonus": "0.5分", "prep": "分类别计分", "link": "#"
-  },
-  {
-    "id": 112, "name": "中国大学生程序设计竞赛（CCPC）", "short": "CCPC", "level": "学院重点支持", "organizer": "CCPC组委会",
-    "signUp": "赛前1-2月", "time": "10月-次年6月", "format": "ACM编程",
-    "difficulty": "精英", "importance": "精英", "skills": ["算法", "编程"], "team": "3人", "bonus": "全国奖1/2/3等4/2/1分", "prep": "顶级赛事", "link": "https://ccpc.io"
-  },
-  {
-    "id": 113, "name": "CCF大学生计算机系统与程序设计竞赛（CCSP）", "short": "CCSP", "level": "学院重点支持", "organizer": "CCF",
-    "signUp": "约9月", "time": "10月", "format": "系统与算法",
-    "difficulty": "精英", "importance": "精英", "skills": ["系统", "算法"], "team": "CSP高分者", "bonus": "全国奖1/2/3等4/2/1分", "prep": "长赛制", "link": "http://ccsp.ccf.org.cn"
-  },
-  {
-    "id": 114, "name": "CCF CSP计算机软件能力认证", "short": "CSP", "level": "学院重点支持", "organizer": "CCF",
-    "signUp": "每年多次", "time": "4小时", "format": "编程认证",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["编程"], "team": "个人", "bonus": "加分=认证分数÷100-1.5", "prep": "刷分", "link": "https://www.cspro.org"
-  },
-  {
-    "id": 115, "name": "国家有关部门认定的开源贡献奖", "short": "开源贡献", "level": "学院重点支持", "organizer": "网安协会",
-    "signUp": "约10月", "time": "半年", "format": "开源贡献",
-    "difficulty": "进阶", "importance": "精英", "skills": ["开源"], "team": "团队", "bonus": "全国奖1/2/3等2/1/0.5分", "prep": "真实开源", "link": "#"
-  },
-  {
-    "id": 116, "name": "“长城杯”信息安全铁人三项赛", "short": "长城杯铁人三项", "level": "学院重点支持", "organizer": "中国测评中心",
-    "signUp": "年底至次年初", "time": "次年7月", "format": "防护+作品",
-    "difficulty": "精英", "importance": "精英", "skills": ["安全防护", "作品"], "team": "团队", "bonus": "见B2和B3", "prep": "防护赛和作品赛分别计分", "link": "https://ccb.itsec.gov.cn"
-  },
-  {
-    "id": 117, "name": "“网鼎杯”网络安全大赛", "short": "网鼎杯", "level": "学院重点支持", "organizer": "公安部",
-    "signUp": "不定", "time": "不定", "format": "网络安全实战",
-    "difficulty": "精英", "importance": "精英", "skills": ["渗透", "Web"], "team": "团队", "bonus": "全国奖1/2/3等4/2/1分", "prep": "顶级赛事", "link": "https://www.wangdingcup.com"
-  },
-  {
-    "id": 118, "name": "“强网杯”全国网络安全挑战赛", "short": "强网杯", "level": "学院重点支持", "organizer": "中央网信办",
-    "signUp": "约10月", "time": "11月", "format": "CTF+AWD",
-    "difficulty": "精英", "importance": "精英", "skills": ["CTF", "AWD"], "team": "团队", "bonus": "全国奖1/2/3等4/2/1分", "prep": "顶级赛事", "link": "https://www.qiangwangbei.com"
-  },
-  {
-    "id": 119, "name": "发现原创漏洞并获得CNVD漏洞编号", "short": "CNVD漏洞", "level": "学院重点支持", "organizer": "CNVD",
-    "signUp": "全年", "time": "全年", "format": "漏洞挖掘",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["挖洞"], "team": "第一人", "bonus": "最高1.5分（低危0.5/中危1/高危1.5）", "prep": "需提供证明", "link": "#"
-  },
-  {
-    "id": 120, "name": "在指定的国产化软硬件开源社区提交代码并合并使用", "short": "开源PR", "level": "学院重点支持", "organizer": "指定社区",
-    "signUp": "全年", "time": "全年", "format": "代码提交",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["开发", "内核"], "team": "第一人", "bonus": "最高1.5分", "prep": "按行数计分，不与CNVD重复", "link": "#"
-  },
-  {
-    "id": 121, "name": "代表学院参加学院指定的护网行动", "short": "护网行动", "level": "学院重点支持", "organizer": "学院",
-    "signUp": "看通知", "time": "看通知", "format": "防守实战",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["应急"], "team": "代表队", "bonus": "每次0.5分，最高2分", "prep": "需学院认可", "link": "#"
-  },
-  {
-    "id": 122, "name": "经学院认定的其他具有较高水平的竞赛", "short": "其他高水平赛", "level": "学院重点支持", "organizer": "学院教指委",
-    "signUp": "不定", "time": "不定", "format": "其他高水平竞赛",
-    "difficulty": "进阶", "importance": "进阶", "skills": ["综合能力"], "team": "团队", "bonus": "最高2分", "prep": "需由院学术委员会认定", "link": "#"
+    "id": 1,
+    "name": "中国国际大学生创新大赛（原互联网+）",
+    "short": "互联网+",
+    "level": "A",
+    "organizer": "教育部",
+    "signUp": "校级选拔约3-6月",
+    "time": "校赛3-6月 → 省赛7-9月 → 国赛10-11月",
+    "format": "高教主赛道、红旅赛道等",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "创新创业",
+      "商业计划书",
+      "路演"
+    ],
+    "team": "3-15人",
+    "bonus": "8分（全国1等奖/金奖排名前4名）",
+    "prep": "国金获奖率极低，双创类天花板",
+    "link": "https://cy.ncss.cn"
+  },
+  {
+    "id": 2,
+    "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+    "short": "大挑",
+    "level": "A",
+    "organizer": "共青团中央",
+    "signUp": "约4-6月",
+    "time": "校赛4-6月 → 省赛7-8月 → 国赛10-11月",
+    "format": "学术论文、调查报告、科技发明",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "学术论文",
+      "科技发明"
+    ],
+    "team": "不超过8人",
+    "bonus": "8分（全国1等奖/金奖排名前4名）",
+    "prep": "奇数年，保研履历硬通货",
+    "link": "http://www.tiaozhanbei.net"
+  },
+  {
+    "id": 3,
+    "name": "“挑战杯”中国大学生创业计划大赛",
+    "short": "小挑",
+    "level": "A",
+    "organizer": "共青团中央",
+    "signUp": "约5-9月",
+    "time": "校赛5月底前 → 省赛6-9月 → 国赛11月前",
+    "format": "创业计划竞赛",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "商业计划书",
+      "路演"
+    ],
+    "team": "团队",
+    "bonus": "8分（全国1等奖/金奖排名前4名）",
+    "prep": "偶数年，偏商业计划与路演",
+    "link": "http://www.tiaozhanbei.net"
+  },
+  {
+    "id": 4,
+    "name": "ACM-ICPC国际大学生程序设计竞赛（亚洲区及以上）",
+    "short": "ICPC",
+    "level": "B",
+    "organizer": "ICPC基金会",
+    "signUp": "赛前1-2个月",
+    "time": "区域赛9-12月 → 世界总决赛次年",
+    "format": "ACM赛制算法编程",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "算法",
+      "图论",
+      "动态规划"
+    ],
+    "team": "3人",
+    "bonus": "世界总决赛金/银/铜8/7/6分；区域赛金/银/铜4/2/1分",
+    "prep": "算法竞赛天花板",
+    "link": "https://icpc.global"
+  },
+  {
+    "id": 5,
+    "name": "全国大学生信息安全竞赛（创新实践能力赛）暨“长城杯”半决赛",
+    "short": "CISCN半决赛",
+    "level": "B",
+    "organizer": "教育部教指委",
+    "signUp": "原则上定于每年3月至6月，决赛时间原则上为每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "time": "每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "format": "CTF解题 + AWD",
+    "difficulty": "进阶",
+    "importance": "精英",
+    "skills": [
+      "Web",
+      "Pwn",
+      "逆向",
+      "密码学"
+    ],
+    "team": "≤4人",
+    "bonus": "1/2/3等加3/2/1分",
+    "prep": "网安国赛，含金量极高",
+    "link": "http://www.ciscn.cn"
+  },
+  {
+    "id": 6,
+    "name": "全国大学生信息安全竞赛（创新实践能力赛）决赛",
+    "short": "CISCN决赛",
+    "level": "B",
+    "organizer": "教育部教指委",
+    "signUp": "原则上定于每年3月至6月，决赛时间原则上为每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "time": "每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "format": "CTF解题 + AWD",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "Web",
+      "Pwn",
+      "逆向",
+      "密码学"
+    ],
+    "team": "≤4人",
+    "bonus": "1/2/3等加8/7/6分（不与半决赛累加）",
+    "prep": "网安最高级别国赛",
+    "link": "http://www.ciscn.cn"
+  },
+  {
+    "id": 7,
+    "name": "“长城杯”网数智安全大赛（防护赛）决赛",
+    "short": "长城杯决赛",
+    "level": "B",
+    "organizer": "中国信息安全测评中心",
+    "signUp": "年底至次年初",
+    "time": "次年7月",
+    "format": "网数智安全攻防",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "AWD",
+      "渗透",
+      "应急"
+    ],
+    "team": "团队",
+    "bonus": "1/2/3等加6/5/4分（不与半决赛累加）",
+    "prep": "与CISCN联合举办",
+    "link": "https://ccb.itsec.gov.cn"
+  },
+  {
+    "id": 8,
+    "name": "全国大学生信息安全竞赛（作品赛）暨长城杯作品赛",
+    "short": "CISCN作品赛",
+    "level": "B",
+    "organizer": "教育部教指委",
+    "signUp": "原则上定于每年3月至6月，决赛时间原则上为每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "time": "每年的7月至8月，每年9月1日前完成所有竞赛工作 (自动更新于 2026-11-06 11:08:18)",
+    "format": "信息安全作品",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "安全开发",
+      "创新"
+    ],
+    "team": "≤4人",
+    "bonus": "4分",
+    "prep": "偏作品展示与答辩",
+    "link": "http://www.ciscn.cn"
+  },
+  {
+    "id": 9,
+    "name": "全国大学生信息安全与对抗技术竞赛",
+    "short": "ISCC",
+    "level": "B",
+    "organizer": "中国兵工学会",
+    "signUp": "约4-5月",
+    "time": "线上4-7月 → 决赛11月",
+    "format": "CTF/擂台/数据安全",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "CTF",
+      "Web",
+      "Misc"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "适合CTF入门到进阶",
+    "link": "https://www.isclab.org.cn"
+  },
+  {
+    "id": 10,
+    "name": "全国大学生物联网设计竞赛",
+    "short": "物联网设计",
+    "level": "B",
+    "organizer": "计算机类教指委",
+    "signUp": "约3-5月",
+    "time": "8月",
+    "format": "物联网系统设计",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "物联网",
+      "嵌入式"
+    ],
+    "team": "3-5人",
+    "bonus": "4分",
+    "prep": "偏工程作品与演示",
+    "link": "http://iot.sjtu.edu.cn"
+  },
+  {
+    "id": 11,
+    "name": "全球校园人工智能算法精英大赛",
+    "short": "AI算法",
+    "level": "B",
+    "organizer": "江苏省人工智能学会",
+    "signUp": "约4月",
+    "time": "11月",
+    "format": "算法赛题",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "AI",
+      "算法"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "榜单赛事",
+    "link": "https://www.aicomp.cn"
+  },
+  {
+    "id": 12,
+    "name": "“中国软件杯”大学生软件设计大赛",
+    "short": "软件杯",
+    "level": "B",
+    "organizer": "工信部",
+    "signUp": "约3-7月",
+    "time": "8-9月",
+    "format": "企业命题软件开发",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "软件开发",
+      "AI"
+    ],
+    "team": "3-5人",
+    "bonus": "4分",
+    "prep": "大模型/信创方向",
+    "link": "http://www.cnsoftbei.com"
+  },
+  {
+    "id": 13,
+    "name": "全国大学生计算机系统能力大赛",
+    "short": "系统能力",
+    "level": "B",
+    "organizer": "计算机教育研究会",
+    "signUp": "约3-5月",
+    "time": "8月",
+    "format": "CPU/OS/编译/数据库",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "操作系统",
+      "底层"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "极硬核",
+    "link": "https://cscc.educg.net"
+  },
+  {
+    "id": 14,
+    "name": "中国大学生计算机设计大赛",
+    "short": "4C",
+    "level": "B",
+    "organizer": "大赛组委会",
+    "signUp": "约3-4月",
+    "time": "7-8月",
+    "format": "软件开发/设计",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "软件开发"
+    ],
+    "team": "团队",
+    "bonus": "专业相关最高4分，非专业1分",
+    "prep": "门槛较友好",
+    "link": "http://jsjds.blcu.edu.cn"
+  },
+  {
+    "id": 15,
+    "name": "中国高校计算机大赛（C4）",
+    "short": "C4",
+    "level": "B",
+    "organizer": "计算机类教指委",
+    "signUp": "贯穿3-11月",
+    "time": "贯穿3-11月",
+    "format": "大数据/天梯赛/网络等",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "大数据",
+      "算法"
+    ],
+    "team": "团队",
+    "bonus": "4分（移动应用启明赛道最高2分）",
+    "prep": "网络赛道与网安相关",
+    "link": "http://www.c4best.cn"
+  },
+  {
+    "id": 16,
+    "name": "华为ICT大赛",
+    "short": "华为ICT",
+    "level": "B",
+    "organizer": "华为",
+    "signUp": "约11月",
+    "time": "次年6月",
+    "format": "网络/云/AI",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "网络",
+      "云计算"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "可对应HCIP认证",
+    "link": "https://e.huawei.com/cn/talent/ict-academy"
+  },
+  {
+    "id": 17,
+    "name": "百度之星·程序设计大赛",
+    "short": "百度之星",
+    "level": "B",
+    "organizer": "百度",
+    "signUp": "约4-7月",
+    "time": "8-12月",
+    "format": "算法编程",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "算法"
+    ],
+    "team": "个人",
+    "bonus": "4分",
+    "prep": "初赛省赛，决赛国赛",
+    "link": "https://astar.baidu.com"
+  },
+  {
+    "id": 18,
+    "name": "微软“创新杯”全球学生大赛（国际级）",
+    "short": "创新杯国际",
+    "level": "B",
+    "organizer": "微软",
+    "signUp": "约1-3月",
+    "time": "4月",
+    "format": "科技创业",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "AI",
+      "双创"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "国际赛事",
+    "link": "https://imaginecup.microsoft.com"
+  },
+  {
+    "id": 19,
+    "name": "微软“创新杯”全球学生大赛（中国区）",
+    "short": "创新杯中国区",
+    "level": "B",
+    "organizer": "微软",
+    "signUp": "约1-3月",
+    "time": "4月",
+    "format": "科技创业",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "AI",
+      "双创"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "国内选拔",
+    "link": "https://imaginecup.microsoft.com"
+  },
+  {
+    "id": 20,
+    "name": "全国大学生数学建模竞赛",
+    "short": "国赛数模",
+    "level": "B",
+    "organizer": "工业与应用数学学会",
+    "signUp": "约8-9月",
+    "time": "9月中旬",
+    "format": "数学建模论文",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "数学建模",
+      "编程"
+    ],
+    "team": "3人",
+    "bonus": "4分",
+    "prep": "国一很难",
+    "link": "https://www.mcm.edu.cn"
+  },
+  {
+    "id": 21,
+    "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+    "short": "蓝桥杯",
+    "level": "B",
+    "organizer": "工信部",
+    "signUp": "约10-12月",
+    "time": "次年4-6月",
+    "format": "编程算法",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "C/C++",
+      "Java",
+      "Python"
+    ],
+    "team": "个人",
+    "bonus": "4分",
+    "prep": "省赛简单，国赛有含金量",
+    "link": "https://dasai.lanqiao.cn"
+  },
+  {
+    "id": 22,
+    "name": "全国大学生电子设计竞赛",
+    "short": "电赛",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约1-4月",
+    "time": "奇数年8月",
+    "format": "电子系统设计",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "嵌入式",
+      "硬件"
+    ],
+    "team": "3人",
+    "bonus": "4分",
+    "prep": "硬件类硬通货",
+    "link": "http://nuedc.xjtu.edu.cn"
+  },
+  {
+    "id": 23,
+    "name": "全国大学生数学竞赛",
+    "short": "CMC",
+    "level": "B",
+    "organizer": "中国数学会",
+    "signUp": "约9-10月",
+    "time": "11月",
+    "format": "数学笔试",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "高数",
+      "代数"
+    ],
+    "team": "个人",
+    "bonus": "4分",
+    "prep": "非数学类稍易",
+    "link": "https://www.cmathc.org.cn"
+  },
+  {
+    "id": 24,
+    "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+    "short": "RoboCup",
+    "level": "B",
+    "organizer": "自动化学会",
+    "signUp": "约3-4月",
+    "time": "8-10月",
+    "format": "机器人竞技",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "机器人",
+      "自动化"
+    ],
+    "team": "团队",
+    "bonus": "4分",
+    "prep": "偏硬件",
+    "link": "https://rcccaa.drct-caa.org.cn"
+  },
+  {
+    "id": 25,
+    "name": "全国大学生创新创业训练计划年会展示",
+    "short": "国创年会",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约9-10月",
+    "time": "11-12月",
+    "format": "国创项目展示",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "双创"
+    ],
+    "team": "国创团队",
+    "bonus": "4分",
+    "prep": "需有大创项目",
+    "link": "http://gjcxcy.bjtu.edu.cn"
+  },
+  {
+    "id": 26,
+    "name": "全国大学生智能汽车竞赛",
+    "short": "智能车",
+    "level": "B",
+    "organizer": "自动化学会",
+    "signUp": "约10月",
+    "time": "8月",
+    "format": "智能车竞速",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "嵌入式",
+      "控制"
+    ],
+    "team": "3人",
+    "bonus": "4分",
+    "prep": "自动化认可度高",
+    "link": "http://www.smartcarrace.com"
+  },
+  {
+    "id": 27,
+    "name": "全国大学生嵌入式芯片与系统设计竞赛",
+    "short": "嵌入式芯片",
+    "level": "B",
+    "organizer": "电子教育学会",
+    "signUp": "约4月",
+    "time": "8月",
+    "format": "芯片/FPGA",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "硬件",
+      "嵌入式"
+    ],
+    "team": "1-3人",
+    "bonus": "4分",
+    "prep": "偏硬件",
+    "link": "http://www.socchina.net"
+  },
+  {
+    "id": 28,
+    "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+    "short": "大唐杯",
+    "level": "B",
+    "organizer": "通信企业协会",
+    "signUp": "约12-3月",
+    "time": "7月",
+    "format": "通信技术",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "通信",
+      "5G"
+    ],
+    "team": "个人/团队",
+    "bonus": "4分",
+    "prep": "偏通信",
+    "link": "https://dtcup.dtxiaotangren.com"
+  },
+  {
+    "id": 29,
+    "name": "全国大学生机器人大赛-RoboMaster",
+    "short": "RoboMaster",
+    "level": "B",
+    "organizer": "大疆",
+    "signUp": "约10-11月",
+    "time": "7-8月",
+    "format": "机甲对抗",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "机器人",
+      "视觉"
+    ],
+    "team": "团队",
+    "bonus": "3分",
+    "prep": "硬件门槛极高",
+    "link": "https://www.robomaster.com"
+  },
+  {
+    "id": 30,
+    "name": "全国大学生机器人大赛-RoboCon",
+    "short": "RoboCon",
+    "level": "B",
+    "organizer": "组委会",
+    "signUp": "约12月",
+    "time": "下半年",
+    "format": "机器人任务赛",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "机器人"
+    ],
+    "team": "团队",
+    "bonus": "3分",
+    "prep": "技术难度极大",
+    "link": "https://robocon.org.cn"
+  },
+  {
+    "id": 31,
+    "name": "睿抗机器人开发者大赛（RAICOM)",
+    "short": "睿抗",
+    "level": "B",
+    "organizer": "工信部",
+    "signUp": "约4-7月",
+    "time": "7-10月",
+    "format": "机器人开发",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "机器人",
+      "AI"
+    ],
+    "team": "团队",
+    "bonus": "3分",
+    "prep": "赛项杂",
+    "link": "https://www.raicom.com.cn"
+  },
+  {
+    "id": 32,
+    "name": "中国机器人及人工智能大赛",
+    "short": "机器人及AI",
+    "level": "B",
+    "organizer": "机电一体化协会",
+    "signUp": "约1-4月",
+    "time": "7-8月",
+    "format": "机器人/AI",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "机器人",
+      "AI"
+    ],
+    "team": "1-3人",
+    "bonus": "3分",
+    "prep": "偏应用",
+    "link": "https://www.caairobot.com"
+  },
+  {
+    "id": 33,
+    "name": "中国高校智能机器人创意大赛",
+    "short": "机器人创意",
+    "level": "B",
+    "organizer": "高等教育学会",
+    "signUp": "约3-5月",
+    "time": "7月",
+    "format": "机器人创意",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "机器人"
+    ],
+    "team": "团队",
+    "bonus": "3分",
+    "prep": "偏创意",
+    "link": "http://www.robotcontest.cn"
+  },
+  {
+    "id": 34,
+    "name": "中国大学生工程实践与创新能力大赛",
+    "short": "工创赛",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约7-9月",
+    "time": "下半年",
+    "format": "工程实践",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "工程实践"
+    ],
+    "team": "≤4人",
+    "bonus": "2分",
+    "prep": "机械/电子类",
+    "link": "http://www.gcxl.edu.cn"
+  },
+  {
+    "id": 35,
+    "name": "中美青年创客大赛",
+    "short": "中美创客",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约4-6月",
+    "time": "8月",
+    "format": "创客作品",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "硬件",
+      "双创"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "创客方向",
+    "link": "https://www.chinausyoungmaker.com"
+  },
+  {
+    "id": 36,
+    "name": "全国大学生光电设计竞赛",
+    "short": "光电设计",
+    "level": "B",
+    "organizer": "光学学会",
+    "signUp": "约4月",
+    "time": "6月",
+    "format": "光电系统",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "光电"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "光电类",
+    "link": "https://gd.moocollege.com"
+  },
+  {
+    "id": 37,
+    "name": "全国大学生数字媒体科技作品及创意竞赛",
+    "short": "数媒竞赛",
+    "level": "B",
+    "organizer": "组委会",
+    "signUp": "约9月",
+    "time": "初赛进行中🏟️第三阶段2026年11月2日一2026年11月15日 → 选拔赛📣第四阶段2026年11月19日一2026年11月22日 → 总决赛🏆第六阶段2026年12月4日一2026年12月6日 (自动更新于 2026-11-06 11:08:18)",
+    "format": "数媒作品",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "数字媒体"
+    ],
+    "team": "≤5人",
+    "bonus": "2分",
+    "prep": "与网安无关",
+    "link": "http://www.cmit.cn"
+  },
+  {
+    "id": 38,
+    "name": "全国三维数字化创新设计大赛",
+    "short": "3D大赛",
+    "level": "B",
+    "organizer": "组委会",
+    "signUp": "约3月",
+    "time": "复赛省赛结果暂定2026年11月6日通过大赛官方渠道发布，请各参赛团队密切关注大赛官方通知 → 省赛2026年11月10日起可在3D大赛小程序【个人中心-证书】查询并 → 总决赛2026年11月9日在大赛 (自动更新于 2026-11-06 11:08:18)",
+    "format": "3D建模",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "三维建模"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "机械/设计类",
+    "link": "https://3dds.3ddl.net"
+  },
+  {
+    "id": 39,
+    "name": "“西门子杯”中国智能制造挑战赛",
+    "short": "西门子杯",
+    "level": "B",
+    "organizer": "自动化教指委",
+    "signUp": "约3-5月",
+    "time": "8月",
+    "format": "智能制造",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "智能制造"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "自动化类",
+    "link": "http://www.siemenscup-cimc.org.cn"
+  },
+  {
+    "id": 40,
+    "name": "中国大学生机械工程创新创意大赛",
+    "short": "机械创新",
+    "level": "B",
+    "organizer": "机械工程学会",
+    "signUp": "不定",
+    "time": "不定",
+    "format": "机械设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "机械"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "机械类",
+    "link": "https://www.cmes.org.cn"
+  },
+  {
+    "id": 41,
+    "name": "iCAN大学生创新创业大赛",
+    "short": "iCAN",
+    "level": "B",
+    "organizer": "组委会",
+    "signUp": "约4-8月",
+    "time": "11月",
+    "format": "创新赛道",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "双创"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "创业类",
+    "link": "https://www.g-ican.com"
+  },
+  {
+    "id": 42,
+    "name": "全国周培源大学生力学竞赛",
+    "short": "力学竞赛",
+    "level": "B",
+    "organizer": "力学学会",
+    "signUp": "两年一届",
+    "time": "两年一届",
+    "format": "力学笔试",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "力学"
+    ],
+    "team": "个人/团队",
+    "bonus": "2分",
+    "prep": "工科基础",
+    "link": "http://zpy.cstam.org.cn"
+  },
+  {
+    "id": 43,
+    "name": "外研社全国大学生英语系列赛",
+    "short": "外研社杯",
+    "level": "B",
+    "organizer": "外研社",
+    "signUp": "约6-9月",
+    "time": "10-12月",
+    "format": "英语演讲/写作/阅读",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "英语"
+    ],
+    "team": "个人",
+    "bonus": "2分",
+    "prep": "英语类顶级",
+    "link": "https://ucc.fltrp.com"
+  },
+  {
+    "id": 44,
+    "name": "全国大学生统计建模大赛",
+    "short": "统计建模",
+    "level": "B",
+    "organizer": "统计教育学会",
+    "signUp": "约3月",
+    "time": "10月",
+    "format": "统计模型分析",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "数据分析"
+    ],
+    "team": "3人",
+    "bonus": "2分",
+    "prep": "偏统计",
+    "link": "http://tjjmds.ai-learning.net"
+  },
+  {
+    "id": 45,
+    "name": "“外教社杯”全国高校学生跨文化能力大赛",
+    "short": "跨文化能力",
+    "level": "B",
+    "organizer": "上外",
+    "signUp": "约3-10月",
+    "time": "年底",
+    "format": "英语跨文化交际",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "英语"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "外语类",
+    "link": "https://ict.sflep.com"
+  },
+  {
+    "id": 46,
+    "name": "中华经典诵写讲大赛",
+    "short": "中华经典",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约5-8月",
+    "time": "9-10月",
+    "format": "诵读/书法",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "人文"
+    ],
+    "team": "个人",
+    "bonus": "2分",
+    "prep": "通识类",
+    "link": "https://jdsxj.eduyun.cn"
+  },
+  {
+    "id": 47,
+    "name": "“21世纪杯”全国英语演讲比赛",
+    "short": "21世纪杯",
+    "level": "B",
+    "organizer": "中国日报社",
+    "signUp": "约3-4月",
+    "time": "7月",
+    "format": "英语演讲",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "英语"
+    ],
+    "team": "个人",
+    "bonus": "2分",
+    "prep": "英语演讲",
+    "link": "https://contest.i21st.cn"
+  },
+  {
+    "id": 48,
+    "name": "全国大学生物理实验竞赛",
+    "short": "物理实验",
+    "level": "B",
+    "organizer": "实验教学联席会",
+    "signUp": "约5月",
+    "time": "下半年",
+    "format": "物理实验",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "物理"
+    ],
+    "team": "团队",
+    "bonus": "2分",
+    "prep": "实验类",
+    "link": "http://wlsycx.moocollege.com"
+  },
+  {
+    "id": 49,
+    "name": "未来设计师·全国高校数字艺术设计大赛",
+    "short": "未来设计师",
+    "level": "B",
+    "organizer": "工信部",
+    "signUp": "约3-6月",
+    "time": "下半年",
+    "format": "数字艺术设计",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "设计"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "设计类",
+    "link": "https://www.ncda.org.cn"
+  },
+  {
+    "id": 50,
+    "name": "全国大学生地质技能竞赛",
+    "short": "地质技能",
+    "level": "B",
+    "organizer": "地质学会",
+    "signUp": "两年一届",
+    "time": "8月",
+    "format": "地质技能",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "地质"
+    ],
+    "team": "3人",
+    "bonus": "1分",
+    "prep": "地质类",
+    "link": "https://www.geosociety.org.cn"
+  },
+  {
+    "id": 51,
+    "name": "米兰设计周——中国高校设计学科师生优秀作品展",
+    "short": "米兰设计周",
+    "level": "B",
+    "organizer": "教育国际交流协会",
+    "signUp": "约1-4月",
+    "time": "7月",
+    "format": "设计作品",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "设计"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "设计类",
+    "link": "https://www.milan-aap.org.cn"
+  },
+  {
+    "id": 52,
+    "name": "全国大学生集成电路创新创业大赛",
+    "short": "集成电路",
+    "level": "B",
+    "organizer": "工信部",
+    "signUp": "约5-7月",
+    "time": "下半年",
+    "format": "集成电路设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "芯片",
+      "硬件"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "芯片类",
+    "link": "http://univ.ciciec.com"
+  },
+  {
+    "id": 53,
+    "name": "全国高校商业精英挑战赛",
+    "short": "商业精英",
+    "level": "B",
+    "organizer": "贸促会",
+    "signUp": "各赛项不同",
+    "time": "各赛项不同",
+    "format": "商业策划",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "商业"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "商科类",
+    "link": "https://www.cubec.org.cn"
+  },
+  {
+    "id": 54,
+    "name": "中国好创意暨全国数字艺术设计大赛",
+    "short": "中国好创意",
+    "level": "B",
+    "organizer": "电子视像协会",
+    "signUp": "约3-7月",
+    "time": "下半年",
+    "format": "数字艺术",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "设计"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "设计类",
+    "link": "https://www.cdec.org.cn"
+  },
+  {
+    "id": 55,
+    "name": "“学创杯”全国大学生创业综合模拟大赛",
+    "short": "学创杯",
+    "level": "B",
+    "organizer": "实验教学联席会",
+    "signUp": "约3-4月",
+    "time": "10-11月",
+    "format": "创业模拟",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "沙盘"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "商科类",
+    "link": "http://www.xcbds.com"
+  },
+  {
+    "id": 56,
+    "name": "全国高校BIM毕业设计创新大赛",
+    "short": "BIM",
+    "level": "B",
+    "organizer": "土木学会",
+    "signUp": "约9月-次年1月",
+    "time": "次年4-5月",
+    "format": "BIM设计",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "BIM"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "土木类",
+    "link": "https://gxbsxs.glodonedu.com"
+  },
+  {
+    "id": 57,
+    "name": "全国大学生化学实验邀请赛",
+    "short": "化学邀请赛",
+    "level": "B",
+    "organizer": "化学教育研究中心",
+    "signUp": "不定",
+    "time": "8月",
+    "format": "化学实验",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "化学"
+    ],
+    "team": "个人",
+    "bonus": "1分",
+    "prep": "化学类",
+    "link": "#"
+  },
+  {
+    "id": 58,
+    "name": "全国大学生生命科学竞赛（CULSU）",
+    "short": "生命科学",
+    "level": "B",
+    "organizer": "生命科学竞赛委员会",
+    "signUp": "约8月-次年1月",
+    "time": "次年",
+    "format": "生命科学探究",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "生物"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "生物类",
+    "link": "http://www.culsc.cn"
+  },
+  {
+    "id": 59,
+    "name": "全国大学生市场调查与分析大赛",
+    "short": "市场调查",
+    "level": "B",
+    "organizer": "商业统计学会",
+    "signUp": "约10月",
+    "time": "次年5月",
+    "format": "市场调查分析",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "统计"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "http://www.china-cssc.org"
+  },
+  {
+    "id": 60,
+    "name": "两岸新锐设计竞赛·华灿奖",
+    "short": "华灿奖",
+    "level": "B",
+    "organizer": "高等教育学会",
+    "signUp": "约10-11月",
+    "time": "次年",
+    "format": "设计",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "设计"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "设计类",
+    "link": "http://www.huacanjiang.com"
+  },
+  {
+    "id": 61,
+    "name": "中国大学生服务外包创新创业大赛",
+    "short": "服务外包",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "约2-3月",
+    "time": "年中",
+    "format": "软件/AI开发",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "软件开发"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "计算机相关",
+    "link": "http://www.fwwb.org.cn"
+  },
+  {
+    "id": 62,
+    "name": "全国大学生工业设计大赛",
+    "short": "工业设计",
+    "level": "B",
+    "organizer": "工业设计平台",
+    "signUp": "约5-7月",
+    "time": "下半年",
+    "format": "工业设计",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "设计"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "设计类",
+    "link": "https://www.cuidc.net"
+  },
+  {
+    "id": 63,
+    "name": "全国大学生广告艺术大赛",
+    "short": "大广赛",
+    "level": "B",
+    "organizer": "大赛组委会",
+    "signUp": "约3-6月",
+    "time": "9月",
+    "format": "广告创意",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "广告设计"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "艺术类",
+    "link": "https://www.sun-ada.net"
+  },
+  {
+    "id": 64,
+    "name": "中国大学生医学技术技能大赛",
+    "short": "医学技能",
+    "level": "B",
+    "organizer": "教育部",
+    "signUp": "两年一届",
+    "time": "不定",
+    "format": "医学技能",
+    "difficulty": "精英",
+    "importance": "入门",
+    "skills": [
+      "医学"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "医学类",
+    "link": "#"
+  },
+  {
+    "id": 65,
+    "name": "全国企业竞争模拟大赛",
+    "short": "企模",
+    "level": "B",
+    "organizer": "管理现代化研究会",
+    "signUp": "约2-3月",
+    "time": "4月",
+    "format": "企业沙盘",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "沙盘"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "https://ibizsim.moocollege.com"
+  },
+  {
+    "id": 66,
+    "name": "全国数字建筑创新应用大赛",
+    "short": "数字建筑",
+    "level": "B",
+    "organizer": "建设教育协会",
+    "signUp": "约4-7月",
+    "time": "8-9月",
+    "format": "BIM数字建筑",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "BIM"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "土木类",
+    "link": "http://bisai.ccen.com.cn"
+  },
+  {
+    "id": 67,
+    "name": "全国高等院校数智化企业经营沙盘大赛",
+    "short": "数智化沙盘",
+    "level": "B",
+    "organizer": "商业联合会",
+    "signUp": "约4-5月",
+    "time": "9月",
+    "format": "沙盘模拟",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "沙盘"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "https://www.seentao.com/competition"
+  },
+  {
+    "id": 68,
+    "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+    "short": "三创赛",
+    "level": "B",
+    "organizer": "电商教指委",
+    "signUp": "约10月-次年1月",
+    "time": "次年7-8月",
+    "format": "电商项目",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "商业"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "http://www.3chuang.net"
+  },
+  {
+    "id": 69,
+    "name": "全国大学生财会职业能力大赛",
+    "short": "财会",
+    "level": "B",
+    "organizer": "商业会计学会",
+    "signUp": "约7-9月",
+    "time": "11-12月",
+    "format": "财会技能",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "财会"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "财会类",
+    "link": "http://match.xmkeyun.com.cn"
+  },
+  {
+    "id": 70,
+    "name": "国际大学生智能农业装备创新大赛",
+    "short": "智能农业",
+    "level": "B",
+    "organizer": "农业工程学会",
+    "signUp": "约9月",
+    "time": "复赛2027年1月1日～ 2027年3月5日 → 省赛委员会确定，需在 2027年3月5日前 (自动更新于 2026-11-06 11:08:18)",
+    "format": "农业装备",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "机械"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "农业类",
+    "link": "http://uiaec.ujs.edu.cn"
+  },
+  {
+    "id": 71,
+    "name": "全国企业模拟竞赛大赛",
+    "short": "企模竞赛",
+    "level": "B",
+    "organizer": "管理现代化研究会",
+    "signUp": "约3月",
+    "time": "5月",
+    "format": "企业模拟",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "沙盘"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "https://ibizsim.moocollege.com"
+  },
+  {
+    "id": 72,
+    "name": "全国本科院校税收风险管控案例大赛",
+    "short": "税收风险",
+    "level": "B",
+    "organizer": "大赛组委会",
+    "signUp": "约6-9月",
+    "time": "年底",
+    "format": "税务案例",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "财税"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "财税类",
+    "link": "http://ssfkds.moocollege.com"
+  },
+  {
+    "id": 73,
+    "name": "全国大学生基础医学创新研究暨实验设计论坛",
+    "short": "基础医学",
+    "level": "B",
+    "organizer": "医学竞赛委员会",
+    "signUp": "约12月-次年2月",
+    "time": "暑期",
+    "format": "医学实验设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "医学"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "医学类",
+    "link": "http://www.jcyxds.com"
+  },
+  {
+    "id": 74,
+    "name": "全国大学生能源经济学术创意大赛",
+    "short": "能源经济",
+    "level": "B",
+    "organizer": "双法研究会",
+    "signUp": "约10-11月",
+    "time": "次年4-5月",
+    "format": "能源经济论文",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "经济"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "经管类",
+    "link": "#"
+  },
+  {
+    "id": 75,
+    "name": "全国大学生测绘学科创新创业智能大赛",
+    "short": "测绘",
+    "level": "B",
+    "organizer": "测绘学会",
+    "signUp": "约5月",
+    "time": "7-8月",
+    "format": "测绘技能",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "测绘"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "测绘类",
+    "link": "http://smt.whu.edu.cn"
+  },
+  {
+    "id": 76,
+    "name": "全国大学生花园设计建造竞赛",
+    "short": "花园设计",
+    "level": "B",
+    "organizer": "北京林业大学",
+    "signUp": "约6-10月",
+    "time": "次年春",
+    "format": "花园建造",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "园林"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "园林类",
+    "link": "#"
+  },
+  {
+    "id": 77,
+    "name": "全国大学生化学实验创新设计大赛",
+    "short": "化学创新",
+    "level": "B",
+    "organizer": "化学教育研究中心",
+    "signUp": "约1-3月",
+    "time": "次年7-8月",
+    "format": "化学实验创新",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "化学"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "化学类",
+    "link": "https://cid.nju.edu.cn"
+  },
+  {
+    "id": 78,
+    "name": "全国大学生化工实验大赛",
+    "short": "化工实验",
+    "level": "B",
+    "organizer": "化工教育协会",
+    "signUp": "约4-5月",
+    "time": "暑期",
+    "format": "化工实验",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "化工"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "化工类",
+    "link": "http://edu.cteic.com/match"
+  },
+  {
+    "id": 79,
+    "name": "“工行杯”全国大学生金融科技创新大赛",
+    "short": "工行杯",
+    "level": "B",
+    "organizer": "工商银行",
+    "signUp": "约5-9月",
+    "time": "11月",
+    "format": "金融科技",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "金融",
+      "科技"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "金融类",
+    "link": "https://www.gonghangbei.com"
+  },
+  {
+    "id": 80,
+    "name": "全国大学生机械创新设计大赛",
+    "short": "机械创新",
+    "level": "B",
+    "organizer": "机械创新组委会",
+    "signUp": "两年一届",
+    "time": "两年一届",
+    "format": "机械设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "机械"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "机械类",
+    "link": "https://umic.moocollege.com"
+  },
+  {
+    "id": 81,
+    "name": "全国大学生结构设计竞赛",
+    "short": "结构设计",
+    "level": "B",
+    "organizer": "土木教指委",
+    "signUp": "约1-3月",
+    "time": "10月",
+    "format": "结构设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "土木"
+    ],
+    "team": "3人",
+    "bonus": "1分",
+    "prep": "土木类",
+    "link": "http://www.structurecontest.com"
+  },
+  {
+    "id": 82,
+    "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+    "short": "成图大赛",
+    "level": "B",
+    "organizer": "图学学会",
+    "signUp": "约4月",
+    "time": "7月",
+    "format": "制图/建模",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "CAD"
+    ],
+    "team": "个人/团队",
+    "bonus": "1分",
+    "prep": "机械类",
+    "link": "http://www.chengtudasai.com"
+  },
+  {
+    "id": 83,
+    "name": "全国大学生化工设计竞赛",
+    "short": "化工设计",
+    "level": "B",
+    "organizer": "化工学会",
+    "signUp": "约3-4月",
+    "time": "8月",
+    "format": "化工设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "化工"
+    ],
+    "team": "5人",
+    "bonus": "1分",
+    "prep": "化工类",
+    "link": "http://iche.zju.edu.cn"
+  },
+  {
+    "id": 84,
+    "name": "全国大学生交通运输科技大赛",
+    "short": "交通运输",
+    "level": "B",
+    "organizer": "交通运输协会",
+    "signUp": "约1-3月",
+    "time": "5月",
+    "format": "交通科技",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "交通"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "交通类",
+    "link": "http://www.nactrans.net"
+  },
+  {
+    "id": 85,
+    "name": "全国大学生水利创新设计大赛",
+    "short": "水利创新",
+    "level": "B",
+    "organizer": "水利教育协会",
+    "signUp": "两年一届",
+    "time": "7月",
+    "format": "水利设计",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "水利"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "水利类",
+    "link": "http://sljzw.hhu.edu.cn"
+  },
+  {
+    "id": 86,
+    "name": "全国大学生节能减排社会实践与科技竞赛",
+    "short": "节能减排",
+    "level": "B",
+    "organizer": "能动教指委",
+    "signUp": "约3月",
+    "time": "8月",
+    "format": "节能减排",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "能源"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "能源类",
+    "link": "https://www.jienengjianpai.cn"
+  },
+  {
+    "id": 87,
+    "name": "全国大学生物流设计大赛",
+    "short": "物流设计",
+    "level": "B",
+    "organizer": "物流采购联合会",
+    "signUp": "约4月",
+    "time": "7月",
+    "format": "物流案例",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "物流"
+    ],
+    "team": "团队",
+    "bonus": "1分",
+    "prep": "物流类",
+    "link": "http://dspt.clppx.org.cn"
+  },
+  {
+    "id": 88,
+    "name": "全国大学生金相技能大赛",
+    "short": "金相技能",
+    "level": "B",
+    "organizer": "材料教指委",
+    "signUp": "约3月",
+    "time": "7月",
+    "format": "金相制样",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "材料"
+    ],
+    "team": "个人",
+    "bonus": "1分",
+    "prep": "材料类",
+    "link": "https://www.jxds.tech"
+  },
+  {
+    "id": 89,
+    "name": "在一流国际会议/期刊上发表论文或出版书籍",
+    "short": "B类论文",
+    "level": "B",
+    "organizer": "学院认定",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "学术论文",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "科研"
+    ],
+    "team": "第一人",
+    "bonus": "10分(网安顶会)/3分(通信顶刊等)",
+    "prep": "极高难度",
+    "link": "#"
+  },
+  {
+    "id": 90,
+    "name": "参军入伍期间荣立三等功及以上或被评为优秀士兵",
+    "short": "参军立功",
+    "level": "B",
+    "organizer": "部队",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "立功",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "军事"
+    ],
+    "team": "个人",
+    "bonus": "4分",
+    "prep": "不重复享受C类15",
+    "link": "#"
+  },
+  {
+    "id": 91,
+    "name": "国际或国家级重要体育赛事",
+    "short": "国家级体育",
+    "level": "B",
+    "organizer": "体育总局",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "体育",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "体育"
+    ],
+    "team": "个人/团队",
+    "bonus": "3分（限奖牌获得者）",
+    "prep": "需事先审核备案",
+    "link": "#"
+  },
+  {
+    "id": 92,
+    "name": "曾赴学校官方认可的国际组织实习",
+    "short": "国际实习",
+    "level": "B",
+    "organizer": "国际组织",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "实习",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "外语",
+      "国际视野"
+    ],
+    "team": "个人",
+    "bonus": "3分",
+    "prep": "需学院认证",
+    "link": "#"
+  },
+  {
+    "id": 93,
+    "name": "世界大学生超级计算机竞赛(ASC/SC/ISC)",
+    "short": "超算竞赛",
+    "level": "C",
+    "organizer": "ASC组委会",
+    "signUp": "约11月",
+    "time": "次年5月",
+    "format": "HPC优化",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "超算",
+      "Linux",
+      "CUDA"
+    ],
+    "team": "4-6人",
+    "bonus": "1/2/3等加4/2/1分",
+    "prep": "HPC门槛高",
+    "link": "#"
+  },
+  {
+    "id": 94,
+    "name": "全国大学生软件创新大赛",
+    "short": "软件创新",
+    "level": "C",
+    "organizer": "软件学院联盟",
+    "signUp": "约12月",
+    "time": "次年5月",
+    "format": "软件开发",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "软件开发"
+    ],
+    "team": "团队",
+    "bonus": "1/2/3等加2/1.5/1分",
+    "prep": "软件类",
+    "link": "https://www.swcontest.com.cn"
+  },
+  {
+    "id": 95,
+    "name": "美国大学生数学建模竞赛",
+    "short": "美赛",
+    "level": "C",
+    "organizer": "COMAP",
+    "signUp": "约1月",
+    "time": "2月",
+    "format": "英文数模",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "建模",
+      "英文论文"
+    ],
+    "team": "3人",
+    "bonus": "O/F/M/H加4/3/2/1分",
+    "prep": "O奖极难",
+    "link": "https://www.contest.comap.com"
+  },
+  {
+    "id": 96,
+    "name": "全国密码技术竞赛",
+    "short": "密码技术",
+    "level": "C",
+    "organizer": "密码学会",
+    "signUp": "约6月",
+    "time": "11月",
+    "format": "密码算法/系统",
+    "difficulty": "进阶",
+    "importance": "精英",
+    "skills": [
+      "密码学",
+      "国密"
+    ],
+    "team": "3人",
+    "bonus": "1/2/3等加2/1.5/1分",
+    "prep": "网安核心",
+    "link": "https://www.chinacodes.com.cn"
+  },
+  {
+    "id": 97,
+    "name": "全国高校密码数学挑战赛",
+    "short": "密码数学",
+    "level": "C",
+    "organizer": "密码学会",
+    "signUp": "约3-6月",
+    "time": "8月",
+    "format": "密码数学研究",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "密码学",
+      "数学"
+    ],
+    "team": "3人",
+    "bonus": "1/2/3等加2/1.5/1分",
+    "prep": "难度极大",
+    "link": "https://www.cmathc.org.cn"
+  },
+  {
+    "id": 98,
+    "name": "红点（Reddot）设计大赛（国际级）",
+    "short": "红点奖",
+    "level": "C",
+    "organizer": "德国设计协会",
+    "signUp": "约12月-次年1月",
+    "time": "10-11月",
+    "format": "工业/概念设计",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "设计",
+      "UI/UX"
+    ],
+    "team": "个人/团队",
+    "bonus": "1/2/3等加1/0.8/0.5分",
+    "prep": "设计类",
+    "link": "https://www.red-dot.org"
+  },
+  {
+    "id": 99,
+    "name": "全国大学生英语竞赛",
+    "short": "NECCS",
+    "level": "C",
+    "organizer": "外语教师协会",
+    "signUp": "约12-3月",
+    "time": "4-5月",
+    "format": "英语综合",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "英语"
+    ],
+    "team": "个人",
+    "bonus": "1/2/3等加1/0.8/0.5分",
+    "prep": "容易拿奖",
+    "link": "http://www.chinanccs.cn"
+  },
+  {
+    "id": 100,
+    "name": "全国大学英语四六级考试口语考试",
+    "short": "四六级口语",
+    "level": "C",
+    "organizer": "教育部",
+    "signUp": "随四六级",
+    "time": "随四六级",
+    "format": "口语",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "英语"
+    ],
+    "team": "个人",
+    "bonus": "六级A+ 0.5分，四级A+ 0.3分",
+    "prep": "口语极佳者拿",
+    "link": "#"
+  },
+  {
+    "id": 101,
+    "name": "湖北省大学生信创大赛",
+    "short": "湖北信创",
+    "level": "C",
+    "organizer": "湖北省高教学会",
+    "signUp": "约10-12月",
+    "time": "次年",
+    "format": "信创技术",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "信创",
+      "数据库"
+    ],
+    "team": "3人",
+    "bonus": "前4加2/1.5/1分，5~8名1.5/1/0.5分",
+    "prep": "省内信创赛",
+    "link": "#"
+  },
+  {
+    "id": 102,
+    "name": "计算机技术与软件专业技术资格（水平）考试",
+    "short": "软考",
+    "level": "C",
+    "organizer": "工信部",
+    "signUp": "上半年/下半年",
+    "time": "5月/11月",
+    "format": "计算机技术考试",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "计算机基础"
+    ],
+    "team": "个人",
+    "bonus": "高级2分，其他不加分",
+    "prep": "考高级",
+    "link": "#"
+  },
+  {
+    "id": 103,
+    "name": "国家级大学生创新创业训练计划项目",
+    "short": "国创项目",
+    "level": "C",
+    "organizer": "教育部",
+    "signUp": "按学校通知",
+    "time": "按学校通知",
+    "format": "项目研究",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "科研",
+      "双创"
+    ],
+    "team": "团队前四",
+    "bonus": "负责人1分，成员0.5/0.25分",
+    "prep": "需结题",
+    "link": "#"
+  },
+  {
+    "id": 104,
+    "name": "在核心刊物或会议上发表论文",
+    "short": "C类论文",
+    "level": "C",
+    "organizer": "学院认定",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "学术论文",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "科研"
+    ],
+    "team": "第一人",
+    "bonus": "最高2分(CCF-B/中科院二三区)",
+    "prep": "最多认定一篇",
+    "link": "#"
+  },
+  {
+    "id": 105,
+    "name": "获专利",
+    "short": "专利",
+    "level": "C",
+    "organizer": "国家知识产权局",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "发明专利",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "创新"
+    ],
+    "team": "第一发明人",
+    "bonus": "最高1分",
+    "prep": "华科为第一单位，专业相关",
+    "link": "#"
+  },
+  {
+    "id": 106,
+    "name": "参军入伍",
+    "short": "参军入伍",
+    "level": "C",
+    "organizer": "部队",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "服役",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "军事"
+    ],
+    "team": "个人",
+    "bonus": "1分",
+    "prep": "已按B类加分的不重复",
+    "link": "#"
+  },
+  {
+    "id": 107,
+    "name": "湖北省大学生运动会、省级体育竞赛",
+    "short": "省大运会",
+    "level": "C",
+    "organizer": "湖北省政府",
+    "signUp": "看通知",
+    "time": "5-10月",
+    "format": "体育",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "体育"
+    ],
+    "team": "校队",
+    "bonus": "1/2/3等加0.8/0.5/0.3分",
+    "prep": "需校队",
+    "link": "#"
+  },
+  {
+    "id": 108,
+    "name": "省级文艺活动比赛",
+    "short": "省级文艺",
+    "level": "C",
+    "organizer": "湖北省教育厅",
+    "signUp": "约5-7月",
+    "time": "下半年",
+    "format": "文艺",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "文艺"
+    ],
+    "team": "个人/团队",
+    "bonus": "1/2/3等加0.8/0.5/0.3分",
+    "prep": "美育类",
+    "link": "#"
+  },
+  {
+    "id": 109,
+    "name": "全国优秀学生干部、全国优秀共青团员、中国大学生年度人物等",
+    "short": "思政类(国家级)",
+    "level": "C",
+    "organizer": "各级组织",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "荣誉评定",
+    "difficulty": "精英",
+    "importance": "进阶",
+    "skills": [
+      "综合素质"
+    ],
+    "team": "个人",
+    "bonus": "2分",
+    "prep": "同一类别只加1次",
+    "link": "#"
+  },
+  {
+    "id": 110,
+    "name": "湖北省优秀学生干部、湖北省三好学生等",
+    "short": "思政类(省级)",
+    "level": "C",
+    "organizer": "各级组织",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "荣誉评定",
+    "difficulty": "进阶",
+    "importance": "入门",
+    "skills": [
+      "综合素质"
+    ],
+    "team": "个人",
+    "bonus": "1分",
+    "prep": "分类别计分",
+    "link": "#"
+  },
+  {
+    "id": 111,
+    "name": "校优秀党支部书记、校三好学生等",
+    "short": "思政类(校级)",
+    "level": "C",
+    "organizer": "各级组织",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "荣誉评定",
+    "difficulty": "入门",
+    "importance": "入门",
+    "skills": [
+      "综合素质"
+    ],
+    "team": "个人",
+    "bonus": "0.5分",
+    "prep": "分类别计分",
+    "link": "#"
+  },
+  {
+    "id": 112,
+    "name": "中国大学生程序设计竞赛（CCPC）",
+    "short": "CCPC",
+    "level": "学院重点支持",
+    "organizer": "CCPC组委会",
+    "signUp": "赛前1-2月",
+    "time": "10月-次年6月",
+    "format": "ACM编程",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "算法",
+      "编程"
+    ],
+    "team": "3人",
+    "bonus": "全国奖1/2/3等4/2/1分",
+    "prep": "顶级赛事",
+    "link": "https://ccpc.io"
+  },
+  {
+    "id": 113,
+    "name": "CCF大学生计算机系统与程序设计竞赛（CCSP）",
+    "short": "CCSP",
+    "level": "学院重点支持",
+    "organizer": "CCF",
+    "signUp": "约9月",
+    "time": "10月",
+    "format": "系统与算法",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "系统",
+      "算法"
+    ],
+    "team": "CSP高分者",
+    "bonus": "全国奖1/2/3等4/2/1分",
+    "prep": "长赛制",
+    "link": "http://ccsp.ccf.org.cn"
+  },
+  {
+    "id": 114,
+    "name": "CCF CSP计算机软件能力认证",
+    "short": "CSP",
+    "level": "学院重点支持",
+    "organizer": "CCF",
+    "signUp": "每年多次",
+    "time": "4小时",
+    "format": "编程认证",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "编程"
+    ],
+    "team": "个人",
+    "bonus": "加分=认证分数÷100-1.5",
+    "prep": "刷分",
+    "link": "https://www.cspro.org"
+  },
+  {
+    "id": 115,
+    "name": "国家有关部门认定的开源贡献奖",
+    "short": "开源贡献",
+    "level": "学院重点支持",
+    "organizer": "网安协会",
+    "signUp": "约10月",
+    "time": "半年",
+    "format": "开源贡献",
+    "difficulty": "进阶",
+    "importance": "精英",
+    "skills": [
+      "开源"
+    ],
+    "team": "团队",
+    "bonus": "全国奖1/2/3等2/1/0.5分",
+    "prep": "真实开源",
+    "link": "#"
+  },
+  {
+    "id": 116,
+    "name": "“长城杯”信息安全铁人三项赛",
+    "short": "长城杯铁人三项",
+    "level": "学院重点支持",
+    "organizer": "中国测评中心",
+    "signUp": "年底至次年初",
+    "time": "次年7月",
+    "format": "防护+作品",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "安全防护",
+      "作品"
+    ],
+    "team": "团队",
+    "bonus": "见B2和B3",
+    "prep": "防护赛和作品赛分别计分",
+    "link": "https://ccb.itsec.gov.cn"
+  },
+  {
+    "id": 117,
+    "name": "“网鼎杯”网络安全大赛",
+    "short": "网鼎杯",
+    "level": "学院重点支持",
+    "organizer": "公安部",
+    "signUp": "不定",
+    "time": "不定",
+    "format": "网络安全实战",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "渗透",
+      "Web"
+    ],
+    "team": "团队",
+    "bonus": "全国奖1/2/3等4/2/1分",
+    "prep": "顶级赛事",
+    "link": "https://www.wangdingcup.com"
+  },
+  {
+    "id": 118,
+    "name": "“强网杯”全国网络安全挑战赛",
+    "short": "强网杯",
+    "level": "学院重点支持",
+    "organizer": "中央网信办",
+    "signUp": "约10月",
+    "time": "线上赛2026年10月31日-2026年11月1日 → 线下赛2026年11月28日-2026年11月29日 (自动更新于 2026-11-06 11:08:18)",
+    "format": "CTF+AWD",
+    "difficulty": "精英",
+    "importance": "精英",
+    "skills": [
+      "CTF",
+      "AWD"
+    ],
+    "team": "团队",
+    "bonus": "全国奖1/2/3等4/2/1分",
+    "prep": "顶级赛事",
+    "link": "https://www.qiangwangbei.com"
+  },
+  {
+    "id": 119,
+    "name": "发现原创漏洞并获得CNVD漏洞编号",
+    "short": "CNVD漏洞",
+    "level": "学院重点支持",
+    "organizer": "CNVD",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "漏洞挖掘",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "挖洞"
+    ],
+    "team": "第一人",
+    "bonus": "最高1.5分（低危0.5/中危1/高危1.5）",
+    "prep": "需提供证明",
+    "link": "#"
+  },
+  {
+    "id": 120,
+    "name": "在指定的国产化软硬件开源社区提交代码并合并使用",
+    "short": "开源PR",
+    "level": "学院重点支持",
+    "organizer": "指定社区",
+    "signUp": "全年",
+    "time": "全年",
+    "format": "代码提交",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "开发",
+      "内核"
+    ],
+    "team": "第一人",
+    "bonus": "最高1.5分",
+    "prep": "按行数计分，不与CNVD重复",
+    "link": "#"
+  },
+  {
+    "id": 121,
+    "name": "代表学院参加学院指定的护网行动",
+    "short": "护网行动",
+    "level": "学院重点支持",
+    "organizer": "学院",
+    "signUp": "看通知",
+    "time": "看通知",
+    "format": "防守实战",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "应急"
+    ],
+    "team": "代表队",
+    "bonus": "每次0.5分，最高2分",
+    "prep": "需学院认可",
+    "link": "#"
+  },
+  {
+    "id": 122,
+    "name": "经学院认定的其他具有较高水平的竞赛",
+    "short": "其他高水平赛",
+    "level": "学院重点支持",
+    "organizer": "学院教指委",
+    "signUp": "不定",
+    "time": "不定",
+    "format": "其他高水平竞赛",
+    "difficulty": "进阶",
+    "importance": "进阶",
+    "skills": [
+      "综合能力"
+    ],
+    "team": "团队",
+    "bonus": "最高2分",
+    "prep": "需由院学术委员会认定",
+    "link": "#"
   }
 ]
